@@ -52,7 +52,7 @@
         </div>
       </div>
       <?php
-      include '../footer.php';
+      include 'footer.php';
       ?>
       <!-- fondo de imagen -->
       <div class="image-27"></div>

@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ligconsolata:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
-    <link rel="stylesheet" href="cuentaPerfil1.css"/>
-    <link rel="stylesheet" href="menu1.css">
-    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/cuentaPerfil1.css"/>
+    <link rel="stylesheet" href="CSS/menu1.css">
+    <link rel="stylesheet" href="CSS/header-footer.css">
 
   </head>
   <body>
 
   <?php
-    include '../Base_Datos/conexion.php';
+    include "Base_Datos/crea_tabla.php";
     $conexion = getConexion();
-    $usuario='';
+    $usuario='root';
     $id_usuario='';
     if(isset($_GET['dni'])){
       $usuario = $_GET['dni'];
@@ -53,9 +53,10 @@
                   </button>
                 </div>
               <?php
-              echo "<form action='cuentaPerfil.php?dni=$usuario' method='post' onsubmit='return validacion()'>"?>
-                <div class="cosas">
-                  <span class="bienvenido-usuario">Bienvenido @usuario</span>
+              echo "<form action='cuentaPerfil.php?dni=$usuario' method='post' onsubmit='return validacion()'>"
+              ?>
+                    <div class="cosas">
+                    <span class="bienvenido-usuario">Bienvenido @usuario</span>
                   <?php
                    $nombreCompleto;
                    $domicilio;

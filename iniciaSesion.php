@@ -8,7 +8,7 @@
     <title>Inicia Sesion</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot:wght@400&display=swap" />
-    <link rel="stylesheet" href="iniciaSesion1.css" />
+    <link rel="stylesheet" href="CSS/iniciaSesion1.css" />
   </head>
   <body>
   
@@ -68,7 +68,7 @@
       <div class="image"></div>
     </div>
     <?php 
-    include '../Base_Datos/crea_tabla.php';
+    include 'Base_Datos/crea_tabla.php';
     // Verificar si se ha enviado el formulario
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
      // Obtener el apellido de usuario del formulario

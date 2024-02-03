@@ -1,4 +1,4 @@
-<!-- de Mario o eso creo -->
+<!-- de Mario -->
 
 <!DOCTYPE html>
 <html lang="en">

@@ -24,95 +24,95 @@
           <span class="text-7"
             ><br />1. ¿Sueles encontrar difícil prestar atención a los detalles?<br />
             <input type="radio" name="a1" id="a1" />a) Sí, muy a menudo.<br />
-            <input type="radio" name="b1" id="b1" />b) A veces.<br />
-            <input type="radio" name="c1" id="c1" />c) No, casi nunca.<br /><br />
+            <input type="radio" name="a1" id="b1" />b) A veces.<br />
+            <input type="radio" name="a1" id="c1" />c) No, casi nunca.<br /><br />
             2. ¿Te distraes fácilmente en situaciones que requieren
             concentración?<br />
-            <input type="radio" name="a2" id="a2" />a)Sí, con frecuencia.<br />
-            <input type="radio" name="b2" id="b2" />b) Ocasionalmente.<br />
-            <input type="radio" name="c2" id="c2" />c) No, rara vez.<br /><br />
+            <input type="radio" name="b2" id="d2" />a)Sí, con frecuencia.<br />
+            <input type="radio" name="b2" id="e2" />b) Ocasionalmente.<br />
+            <input type="radio" name="b2" id="f2" />c) No, rara vez.<br /><br />
             3. ¿Tienes dificultades para seguir instrucciones largas o completar
             tareas?<br />
-            <input type="radio" name="a3" id="a3" />a) Sí, con regularidad.<br />
-            <input type="radio" name="b3" id="b3" />b) A veces.<br />
+            <input type="radio" name="c3" id="a3" />a) Sí, con regularidad.<br />
+            <input type="radio" name="c3" id="b3" />b) A veces.<br />
             <input type="radio" name="c3" id="c3" />c) No, casi nunca.<br /><br />4. ¿Sientes
             que tu mente a menudo está ocupada con varios pensamientos a la
             vez?<br />
-            <input type="radio" name="a4" id="a4" />a) Sí, constantemente.<br />
-            <input type="radio" name="b4" id="b4" />b) De vez en cuando.<br />
-            <input type="radio" name="c4" id="c4" />c) No, raramente.<br /><br />5. ¿Te
+            <input type="radio" name="d4" id="a4" />a) Sí, constantemente.<br />
+            <input type="radio" name="d4" id="b4" />b) De vez en cuando.<br />
+            <input type="radio" name="d4" id="c4" />c) No, raramente.<br /><br />5. ¿Te
             cuesta mantener el orden en tus pertenencias y en tu espacio de
             trabajo?<br />
-            <input type="radio" name="a5" id="a5" />a) Sí, muy a menudo.<br />
-            <input type="radio" name="b5" id="b5" />b) En ocasiones.<br />
-            <input type="radio" name="c5" id="c5" />c) No, casi nunca.<br /><br />6. ¿Tienes
+            <input type="radio" name="e5" id="a5" />a) Sí, muy a menudo.<br />
+            <input type="radio" name="e5" id="b5" />b) En ocasiones.<br />
+            <input type="radio" name="e5" id="c5" />c) No, casi nunca.<br /><br />6. ¿Tienes
             dificultades para esperar tu turno en situaciones sociales?<br />
-            <input type="radio" name="a" id="a" />a) Sí, con frecuencia.<br />
-            <input type="radio" name="b" id="b" />b) Ocasionalmente.<br />
-            <input type="radio" name="c" id="c" />c) No, rara vez.<br /><br />7. ¿Sientes
+            <input type="radio" name="f6" id="a" />a) Sí, con frecuencia.<br />
+            <input type="radio" name="f6" id="b" />b) Ocasionalmente.<br />
+            <input type="radio" name="f6" id="c" />c) No, rara vez.<br /><br />7. ¿Sientes
             que tienes una necesidad constante de movimiento o inquietud?<br />
-            <input type="radio" name="a" id="a" />a) Sí, la mayoría del tiempo.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />8. ¿Te
+            <input type="radio" name="g7" id="a" />a) Sí, la mayoría del tiempo.<br />
+            <input type="radio" name="g7" id="b" />b) A veces.<br />
+            <input type="radio" name="g7" id="c" />c) No, casi nunca.<br /><br />8. ¿Te
             resulta complicado organizarte y planificar actividades a largo
             plazo?<br />
-            <input type="radio" name="a" id="a" />a) Sí, muy a menudo.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />9. ¿Encuentras
+            <input type="radio" name="h8" id="a" />a) Sí, muy a menudo.<br />
+            <input type="radio" name="h8" id="b" />b) A veces.<br />
+            <input type="radio" name="h8" id="c" />c) No, casi nunca.<br /><br />9. ¿Encuentras
             difícil mantener la atención en las conversaciones de otras
             personas?<br />
-            <input type="radio" name="a" id="a" />a) Sí, con frecuencia.<br />
-            <input type="radio" name="b" id="b" />b) De vez en cuando.<br />
-            <input type="radio" name="c" id="c" />c) No, raramente.<br /><br />10. ¿Sientes
+            <input type="radio" name="i9" id="a" />a) Sí, con frecuencia.<br />
+            <input type="radio" name="i9" id="b" />b) De vez en cuando.<br />
+            <input type="radio" name="i9" id="c" />c) No, raramente.<br /><br />10. ¿Sientes
             que te aburres fácilmente con tareas que requieren atención
             continua?<br />
-            <input type="radio" name="a" id="a" />a) Sí, a menudo.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />11. ¿Encuentras
+            <input type="radio" name="j" id="a" />a) Sí, a menudo.<br />
+            <input type="radio" name="j" id="b" />b) A veces.<br />
+            <input type="radio" name="j" id="c" />c) No, casi nunca.<br /><br />11. ¿Encuentras
             difícil recordar las fechas límite y cumplir con plazos?<br />
-            <input type="radio" name="a" id="a" />a) Sí, con frecuencia.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />12. ¿Te
+            <input type="radio" name="k" id="a" />a) Sí, con frecuencia.<br />
+            <input type="radio" name="k" id="b" />b) A veces.<br />
+            <input type="radio" name="k" id="c" />c) No, casi nunca.<br /><br />12. ¿Te
             cuesta permanecer enfocado en una tarea específica durante largos
             períodos?<br />
-            <input type="radio" name="a" id="a" />a) Sí, la mayoría del tiempo.<br />
-            <input type="radio" name="b" id="b" />b) Ocasionalmente.<br />
-            <input type="radio" name="c" id="c" />c) No, raramente.<br /><br />13. ¿Sientes
+            <input type="radio" name="l" id="a" />a) Sí, la mayoría del tiempo.<br />
+            <input type="radio" name="l" id="b" />b) Ocasionalmente.<br />
+            <input type="radio" name="l" id="c" />c) No, raramente.<br /><br />13. ¿Sientes
             que a menudo te impulsas a interrumpir a los demás en medio de una
             conversación?<br />
-            <input type="radio" name="a" id="a" />a) Sí, con regularidad.<br />
-            <input type="radio" name="b" id="b" />b) De vez en cuando.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />14. ¿Experimentas
+            <input type="radio" name="m" id="a" />a) Sí, con regularidad.<br />
+            <input type="radio" name="m" id="b" />b) De vez en cuando.<br />
+            <input type="radio" name="m" id="c" />c) No, casi nunca.<br /><br />14. ¿Experimentas
             cambios frecuentes de interés o pasatiempos?<br />
-            <input type="radio" name="a" id="a" />a) Sí, muy a menudo.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />15. ¿Tienes
+            <input type="radio" name="n" id="a" />a) Sí, muy a menudo.<br />
+            <input type="radio" name="n" id="b" />b) A veces.<br />
+            <input type="radio" name="n" id="c" />c) No, casi nunca.<br /><br />15. ¿Tienes
             dificultades para seguir una rutina diaria establecida?<br />
-            <input type="radio" name="a" id="a" />a) Sí, a menudo.<br />
-            <input type="radio" name="b" id="b" />b) Ocasionalmente.<br />
-            <input type="radio" name="c" id="c" />c) No, raramente.<br /><br />16. ¿Sientes
+            <input type="radio" name="o" id="a" />a) Sí, a menudo.<br />
+            <input type="radio" name="o" id="b" />b) Ocasionalmente.<br />
+            <input type="radio" name="o" id="c" />c) No, raramente.<br /><br />16. ¿Sientes
             que a veces actúas sin pensar en las consecuencias?<br />
-            <input type="radio" name="a" id="a" />a) Sí, con frecuencia.<br />
-            <input type="radio" name="b" id="b" />b) Ocasionalmente.<br />
-            <input type="radio" name="c" id="c" />c) No, rara vez.<br /><br />17. ¿Te
+            <input type="radio" name="p" id="a" />a) Sí, con frecuencia.<br />
+            <input type="radio" name="p" id="b" />b) Ocasionalmente.<br />
+            <input type="radio" name="p" id="c" />c) No, rara vez.<br /><br />17. ¿Te
             resulta complicado quedarte quieto en situaciones tranquilas o
             relajadas?<br />
-            <input type="radio" name="a" id="a" />a) Sí, la mayoría del tiempo.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, raramente.<br /><br />18. ¿Encuentras
+            <input type="radio" name="q" id="a" />a) Sí, la mayoría del tiempo.<br />
+            <input type="radio" name="q" id="b" />b) A veces.<br />
+            <input type="radio" name="q" id="c" />c) No, raramente.<br /><br />18. ¿Encuentras
             difícil seguir las reglas y los procedimientos establecidos?<br />
-            <input type="radio" name="a" id="a" />a) Sí, muy a menudo.<br />
-            <input type="radio" name="b" id="b" />b) De vez en cuando.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />19. ¿Sientes
+            <input type="radio" name="r" id="a" />a) Sí, muy a menudo.<br />
+            <input type="radio" name="r" id="b" />b) De vez en cuando.<br />
+            <input type="radio" name="r" id="c" />c) No, casi nunca.<br /><br />19. ¿Sientes
             que a menudo olvidas cosas importantes, como llaves o carteras?<br />
-            <input type="radio" name="a" id="a" />a) Sí, constantemente.<br />
-            <input type="radio" name="b" id="b" />b) A veces.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br />20. ¿Te
+            <input type="radio" name="s" id="a" />a) Sí, constantemente.<br />
+            <input type="radio" name="s" id="b" />b) A veces.<br />
+            <input type="radio" name="s" id="c" />c) No, casi nunca.<br /><br />20. ¿Te
             cuesta mantener la motivación para completar tareas que no te
             resultan interesantes?<br />
-            <input type="radio" name="a" id="a" />a) Sí, a menudo.<br />
-            <input type="radio" name="b" id="b" />b) Ocasionalmente.<br />
-            <input type="radio" name="c" id="c" />c) No, casi nunca.<br /><br /><br /></span
+            <input type="radio" name="t" id="a" />a) Sí, a menudo.<br />
+            <input type="radio" name="t" id="b" />b) Ocasionalmente.<br />
+            <input type="radio" name="t" id="c" />c) No, casi nunca.<br /><br /><br /></span
           ><span class="text-8"><br /></span>
           <button type="submit">Enviar Respuestas</button>
         </div>

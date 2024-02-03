@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot:wght@400&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" />
-    <link rel="stylesheet" href="suscripciones(rellenar)1.css" />
+    <link rel="stylesheet" href="CSS/suscripciones(rellenar)1.css" />
     <Link rel="stylesheet" href="CSS/header-footer.css" />
   </head>
   <body>
