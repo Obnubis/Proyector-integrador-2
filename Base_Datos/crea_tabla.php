@@ -90,21 +90,24 @@
         localidad VARCHAR(40),
         email VARCHAR(100) NOT NULL, 
         fecha_nac DATE NOT NULL,
-        suscripciones date
+        suscripciones date,
+        telefono int,
+        pago varchar(100), 
+        iban VARCHAR(100)
     )";
      mysqli_query($conexion, $usuario) or die("Error al crear la tabla" . mysqli_error($conexion));
 
      $datos_paciente = array ( 
         array ('1234','12345678A', 'Juanito', 'Gómez', 'Calle Sanchez 2','28019','Madrid', 'Madrid', '
-        juanito@gmail.com', '1990-01-15', $fecha_actual),
+        juanito@gmail.com', '1990-01-15', $fecha_actual, '640212325', 'ES8820381520556400103342'),
         array('1234','98765432B', 'Ananita', 'Martínez','Calle de Tajo 6', '28670' , 'Villaviciosa de Odón', 'Madrid',
-        'ananita@gmail.com', '1985-05-20', $fecha_actual),
+        'ananita@gmail.com', '1985-05-20', $fecha_actual,'642512325', 'ES77210022678951817199410'),
         array('1234','45678901C', 'CarlosTomas', 'Gonzares', 'Calle Luis claudio 2','28044', 'Madrid', 'Madrid',
-        'carlos@gmail.com', '1980-12-10', $fecha_actual),
+        'carlos@gmail.com', '1980-12-10', $fecha_actual, '640212105', 'ES8100340502280810647140'),
         array('1234','78901234D', 'Tomas', 'Rodríguez', 'Calle clarisa', '28019','Madrid', 'Madrid',
-        'tomas@gmail.com', '1995-08-05', $fecha_actual),
+        'tomas@gmail.com', '1995-08-05', $fecha_actual, '674111325', 'ES8800230700550395652225'),
         array('1234','72101535D', 'Tomas', 'Sanchez', 'Calle Alejandro Sanchez', '28019','Madrid', 'Madrid',
-        'tomasSanchez@gmail.com', '1975-09-25', $fecha_actual)
+        'tomasSanchez@gmail.com', '1975-09-25', $fecha_actual,'612312325', 'ES9201286819518964197151')
         
     );
     
@@ -121,6 +124,8 @@
         $email = $dato[8];
         $fecha_nac = $dato[9];
         $suscripciones = $dato[10];
+        $telefono = $dato[11];
+        $iban = $dato [12];
         
         $verficar = "SELECT * FROM usuario where dni = '$dni'";
         $resultado = mysqli_query($conexion,$verficar);
@@ -128,8 +133,8 @@
         if (mysqli_num_rows($resultado)>0){
         }
         else {
-            $insertar_consulta = "INSERT INTO usuario (contraseña, dni, nombre, apellido, domicilio,codigoPostal,provincia,localidad, email, fecha_nac, suscripciones) VALUES 
-            ('$contraseña', '$dni','$nombre', '$apellido', '$domicilio', '$codigoPostal', '$provincia','$localidad', '$email','$fecha_nac', '$suscripciones')";
+            $insertar_consulta = "INSERT INTO usuario (contraseña, dni, nombre, apellido, domicilio,codigoPostal,provincia,localidad, email, fecha_nac, suscripciones, telefono, iban) VALUES 
+            ('$contraseña', '$dni','$nombre', '$apellido', '$domicilio', '$codigoPostal', '$provincia','$localidad', '$email','$fecha_nac', '$suscripciones', '$telefono', '$iban')";
             mysqli_query($conexion, $insertar_consulta) or die("Error al insertar los datos de consulta: " . mysqli_error($conexion));
            
         }

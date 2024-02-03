@@ -1,0 +1,512 @@
+
+  
+  .main-container {
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1131px;
+    height: 564px;
+    margin: 0 auto;
+    background: #d7dcda;
+    overflow: hidden;
+  }
+  .cierre {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 2px 0 0 1089px;
+    background: url(/img/cruzo.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 36;
+    overflow: hidden;
+    border: none;
+  }
+  .cierre:hover {
+    border: 1px solid black;
+  }
+  .contenido {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 128px;
+    position: relative;
+    width: 1026px;
+    margin: 0 0 0 52.5px;
+    z-index: 2;
+  }
+  .izquierda {
+    flex-shrink: 0;
+    position: relative;
+    width: 475px;
+    height: 500px;
+    background: url(/img/izquierda.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 3;
+  }
+  .derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 423px;
+    padding: 32px 32px 32px 32px;
+    background: #aabbb2;
+    z-index: 4;
+    border-radius: 16px;
+  }
+  .inicio-de-sesion {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 357px;
+    height: 57px;
+    color: #000000;
+    font-family: ABeeZee;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56.736px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+  .registrase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 228px;
+    z-index: 6;
+  }
+  .primera {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+    width: 147px;
+    height: 25px;
+    color: #000000;
+    font-family: GFS Didot, var(--default-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 7;
+  }
+  .registrase-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 81px;
+    height: 28px;
+    padding: 16px 16px 16px 16px;
+    z-index: 8;
+    border-radius: 32px;
+  }
+  .button {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 22px;
+    color: #000000;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 9;
+  }
+  .sesion {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 295px;
+    z-index: 10;
+  }
+  .usuario {
+  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        flex-shrink: 0;
+        gap: 10px;
+        position: relative;
+        width: 295px;
+        cursor: pointer;
+        background: transparent;
+        height: 53px;
+        z-index: 11;
+        border-radius: 32px;
+        border: 1px solid black; 
+        background-color: #E8E1E1;
+      
+  }
+  .usuario-icon {
+    flex-shrink: 0;
+    position: absolute;
+    width: 39px;
+    height: 45px;
+    top: 4px;
+    left: 12.5px;
+    background: url(../imagen/inicioSesionRegistrarse/usuario\ 1.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 13;
+  }
+  .nombre-usuario {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: absolute;
+    width: 202px;
+    height: 22px;
+    top: 16px;
+    left: 62.5px;
+    color: #000000;
+    font-family: GFS Didot, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 14;
+    border: none;
+    background: transparent;
+  }
+  .contrasena {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 295px;
+    height: 53px;
+    cursor: pointer;
+    background: transparent;
+    background-color: #E8E1E1;
+    z-index: 15;
+    border-radius: 32px;
+    border: 1px solid black;
+  }
+  .contrasena-usuario {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: absolute;
+    width: 201px;
+    height: 22px;
+    top: 15px;
+    left: 59.5px;
+    color: #000000;
+    font-family: GFS Didot, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 17;
+    background: transparent;
+    border: none;
+  }
+  .contrasena-icon {
+    flex-shrink: 0;
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    top: 7px;
+    left: 12.5px;
+    background: url(/img/bloquear.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 18;
+  }
+  .invisible {
+    flex-shrink: 0;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 15px;
+    left: 260.5px;
+    background: url(/icons/invisible\ 1.png)
+      no-repeat center;
+    background-size: cover;
+    opacity: 0.30000001192092896;
+    z-index: 19;
+  }
+  .parte3 {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 80px;
+    position: relative;
+    width:359px;
+    z-index: 20;
+  }
+  .recuerdame {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 151px;
+    z-index: 21;
+  }
+  .component {
+    flex-shrink: 0;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    z-index: 22;
+    overflow: hidden;
+  }
+  .recordame {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 115px;
+    height: 21px;
+    color: #000000;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.984px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 23;
+  }
+  .necesitas-ayuda {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 143px;
+    height: 21px;
+    color: #000000;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.984px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 24;
+  }
+  .botones-iniciar-sesion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 326px;
+    height: 40px;
+    padding: 16px 16px 16px 16px;
+    cursor: pointer;
+    background: #efabab;
+    border: none;
+    z-index: 25;
+    border-radius: 32px;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  }
+  .iniciar-sesion {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 28px;
+    color: #000000;
+    font-family: GFS Didot;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 26;
+  }
+  .conectate-con {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 143px;
+    height: 21px;
+    color: #000000;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.984px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 27;
+  }
+  .parte4 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 64px;
+    position: relative;
+    width: 305px;
+    z-index: 28;
+  }
+  .boton-google {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 8px;
+    position: relative;
+    width: 119px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 29;
+  }
+  .google {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 118px;
+    height: 43px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #000000;
+    z-index: 30;
+    border-radius: 32px;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  }
+  .google-icon {
+    flex-shrink: 0;
+    position: relative;
+    width: 23.142px;
+    height: 23.142px;
+    background: url(/icons/icon\ _google_.png)
+      no-repeat center;
+    background-size: 100% 100%;
+    z-index: 31;
+  }
+  .google-texto {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 22px;
+    color: #0f0558;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 32;
+  }
+  .boton-facebook {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 10px;
+    position: relative;
+    width: 122px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000000;
+    z-index: 33;
+    border-radius: 32px;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  }
+  .bxl-facebook {
+    flex-shrink: 0;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url(/icons/facebook.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 34;
+    overflow: hidden;
+  }
+  .facebook {
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    height: 22px;
+    color: #0f0558;
+    font-family: GFS Didot;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 35;
+  }
+  .image {
+    position: absolute;
+    width: 1131px;
+    height: 564px;
+    top: 0;
+    left: 0;
+    background: url(/img/fondo1.png)
+      no-repeat center;
+    background-size: cover;
+  }
+  

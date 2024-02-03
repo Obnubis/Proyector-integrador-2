@@ -1,0 +1,287 @@
+ 
+  .main-container {
+    overflow: hidden;
+  }
+  hr {
+    background-color: black;
+    height: 2px;
+
+  }
+  
+  .main-container,
+  .main-container * {
+    box-sizing: border-box;
+  }
+  
+  input,
+  select,
+  textarea,
+  button {
+    outline: 0;
+  }
+  
+  .main-container {
+    position: relative;
+    width: 1440px;
+    height: 1130px;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+  }
+  
+  .flex-row-d {
+    position: relative;
+    width: 1440px;
+    height: 702px;
+    margin: 0 0 0 -1px;
+    z-index: 47;
+    overflow: visible auto;
+  }
+
+  .contenidoRegistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: absolute;
+    width: 1440px;
+    height: 702px;
+    top: 0;
+    left: 0;
+    padding: 32px 64px 32px 64px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .contenido-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 100%;
+    height: 582px;
+    z-index: 2;
+  }
+  .mi-perfil {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 273px;
+    height: 53px;
+    color: #000000;
+    font-family: ABeeZee, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 53px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 3;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .contenido-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 1303px;
+    height: 604px;
+    z-index: 4;
+  }
+  .line {
+    flex-shrink: 0;
+    position: relative;
+    width: 1303.006px;
+    height: 1px;
+    background-size: cover;
+    z-index: 5;
+  }
+  .frame-9 {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 1303px;
+    height: 604px;
+    z-index: 6;
+  }
+ 
+  .frame-f {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 6px;
+    position: relative;
+    width: 188px;
+    padding: 16px 0 16px 0;
+    z-index: 19;
+  }
+  .group {
+    flex-shrink: 0;
+    position: relative;
+    width: 137px;
+    height: 126px;
+    background: url(../imagen/cuenta/Icono\ perfil.png)
+      no-repeat center;
+    background-size: cover;
+    z-index: 20;
+  }
+  .group-button {
+    flex-shrink: 0;
+    position: relative;
+    width: 188px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 0px;
+    background-color: #000000;
+    border: none;
+    z-index: 21;
+    border-radius: 8px;
+  }
+  .editar-perfil {
+    display: block;
+    position: relative;
+    height: 21px;
+    margin: 9px 0 0 35px;
+    color: #ffffff;
+    font-size: 20px;
+font-family: "Poppins";
+font-weight: 400;
+    line-height: 18.882px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 23;
+  }
+  .cosas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 32px;
+    position: relative;
+    width: 778px;
+    padding: 16px 0 16px 0;
+    z-index: 24;
+  }
+  .bienvenido-usuario {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 751px;
+    height: 51px;
+    color: #000000;
+    font-family: ABeeZee, var(--default-font-family);
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 51px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 25;
+  }
+  .frame-10 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 683px;
+    padding: 32px 0 32px 0;
+    z-index: 26;
+  }
+  .nombre {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    position: relative;
+    width: 683px;
+    z-index: 27;
+    font-size: 20px;
+font-family: "Poppins";
+font-weight: 400;
+  }
+  .nombre-completo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    flex-basis: auto;
+    position: relative;
+    width: 218px;
+    height: 28px;
+    color: #000000;
+    font-family: Poppins, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 28;
+  }
+  .nombre-11 {
+    flex-shrink: 0;
+    position: relative;
+    width: 465px;
+    height: 28px;
+    font-size: 20px;
+font-family: "Poppins";
+font-weight: 400;
+    background: #d9d9d9;
+    z-index: 29;
+    border-radius: 10px;
+  }
+  .botones-grandes-movil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    gap: 16px;
+    position: relative;
+    width: 180px;
+    height: 36px;
+    padding: 16px 16px 16px 16px;
+    cursor: pointer;
+    background: #efabab;
+    border: none;
+    z-index: 45;
+    border-radius: 32px;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  }
+  .fondoPerfil {
+    position: absolute;
+    width: 100%;
+    height: 702px;
+    top: 112px;
+    background: url(/img/fondo1.png)
+      no-repeat center;
+    background-size: cover;
+  }
+  
+  .sentada {
+    position: absolute;
+    width: 467px;
+    height: 395px;
+    top: 300px;
+    left: 64px;
+    background: url(/img/sentado.png)
+      no-repeat center;
+    background-size: cover;
+  }

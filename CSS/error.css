@@ -1,0 +1,39 @@
+
+.volver{
+    background-color: #efacac;
+    margin-left: 600px;
+    margin-bottom: 20px;
+    border-radius: 32px;
+    width: 298px;
+}
+
+.derecha{
+    margin-left: 100px;
+}
+
+.columna{
+    margin-left: 200px;
+    color: #000;
+
+font-family: Dosis;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.columna h1{
+    width: 660px;
+}
+
+.volver a{
+text-decoration: none;
+color: #000000;
+}
+
+.caja{
+    display: flex;
+    flex-direction: row;
+}
+
+

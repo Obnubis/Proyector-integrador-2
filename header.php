@@ -1,16 +1,35 @@
-<form action="/ruta-del-servidor" method="post">
-      <div class="section">
-        <div class="section-2">
-          <div class="wrapper">
-            <div class="pic"><img src="img/logo.png" width="99px" alt=""></div>
-            <div class="box"><div class="pic-2"></div></div>
-          </div>
-          <div class="group">
-            <button class="section-3"><span class="text">Cuenta</span></button>
-            <button class="wrapper-2"><span class="text-2">Productos</span></button>
-            <button class="box-2"><span class="text-3">Servicios</span></button>
-            <button class="group-2"><span class="text-4">Nosotros</span></button>
-            <button class="group-3"><span class="text-5">Log in</span></button>
-          </div>
-        </div>
-      </div>
+<!-- de Mario -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cita sin sesión</title>
+    <link rel="stylesheet" href="CSS/header-footer.css">
+    <script src="https://kit.fontawesome.com/bca873c580.js"></script>
+  </head>
+  <body>
+<header>
+
+    <div class="logo">
+        <img src="img/logo.png" alt="" width="45px" />
+    </div>
+    <div class="search-bar">
+        <input type="search" placeholder="Buscar...">
+        <i class="fa-solid fa-magnifying-glass"></i> 
+
+    </div>
+    <nav class="buttons">
+        <ul>
+            <li><button class="button">Cuenta</button></li>
+            <li><button class="button">Productos</button></li>
+            <li><button class="button">Servicios</button></li>
+            <li><button class="button">Nosotros</button></li>
+            <li><button class="button register-button">Registrarse</button>
+            </li>
+        </ul>
+    </nav>
+      </header>
+</body>
+</html>

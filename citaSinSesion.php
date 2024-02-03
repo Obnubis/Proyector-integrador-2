@@ -1,4 +1,4 @@
-<!-- creo que de mario es el mismo codigo que en la del php -->
+<!--  creo que de Mario -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,9 +17,9 @@
       <?php
       include "header.php";
       ?>
-      <div class="box-3"><span class="text-6">Cita sin sesión</span></div>
+      
       <div class="pag">
-        <div class="derecha">
+        <div class="izquierda">
             <h1>Género del doctor</h1>
             <form action="">
                 <input type="radio" name="hombre" id=""> Hombre
@@ -33,7 +33,7 @@
                 <h5>max</h5>   
             </form>
         </div>
-        <div class="izquierda">
+        <div class="derecha">
             <div class="maria">
                 <div class="info">
                     <div class="profile"></div>
@@ -253,7 +253,8 @@
     <?php
     include "footer.php";
     ?>
-
+      
+      
     </div>
   </body>
 </html>
