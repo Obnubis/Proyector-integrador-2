@@ -1,4 +1,3 @@
-  
   .main-container {
     overflow: hidden;
   }
@@ -17,7 +16,6 @@
   
   .main-container {
     position: relative;
-    width: 1440px;
     height: 1536px;
     margin: 0 auto;
     background: #ffffff;
@@ -32,16 +30,14 @@
     gap: 10px;
     position: relative;
     width: 1440px;
-    margin: -1px 0 0 0;
     overflow: hidden;
   }
   .pic-2 {
     flex-shrink: 0;
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 1109px;
-    background: url(../imagen/suscripciones/fondo\ \(1\).png)
-      no-repeat center;
+    background: url(../img/fondo6.png) no-repeat center;
     background-size: cover;
     z-index: 1;
   }
@@ -107,7 +103,7 @@
     position: relative;
     height: 25px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.98px;
@@ -175,7 +171,7 @@
     width: 227px;
     height: 48px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -209,7 +205,7 @@
     width: 330px;
     height: 96px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -241,7 +237,7 @@
     width: 532px;
     height: 57px;
     color: #000000;
-    font-family: ABeeZee, var(--default-font-family);
+    font-family: ABeeZee;
     font-size: 48px;
     font-weight: 400;
     line-height: 56.736px;
@@ -255,7 +251,7 @@
     position: relative;
     height: 25px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.98px;
@@ -303,7 +299,7 @@
     width: 78px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -313,7 +309,7 @@
   }
   .nombre {
     flex-shrink: 0;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     position: relative;
@@ -341,7 +337,7 @@
     width: 182px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -356,7 +352,7 @@
     height: 24px;
     background: #d9d9d9;
     z-index: 28;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
   }
@@ -379,7 +375,7 @@
     width: 162px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -414,7 +410,7 @@
     width: 85px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -429,7 +425,7 @@
     height: 24px;
     background: #d9d9d9;
     z-index: 34;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
   }
@@ -444,7 +440,7 @@
     width: 79px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -459,7 +455,7 @@
     height: 24px;
     background: #d9d9d9;
     z-index: 37;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
   }
@@ -493,7 +489,7 @@
     width: 123px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -508,7 +504,7 @@
     height: 24px;
     background: #d9d9d9;
     z-index: 50;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
   }
@@ -523,7 +519,7 @@
     width: 90px;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -538,7 +534,7 @@
     height: 24px;
     background: #d9d9d9;
     z-index: 53;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
   }
@@ -565,7 +561,7 @@
     width: 532px;
     height: 57px;
     color: #000000;
-    font-family: ABeeZee, var(--default-font-family);
+    font-family: ABeeZee;
     font-size: 48px;
     font-weight: 400;
     line-height: 56.736px;
@@ -579,7 +575,7 @@
     position: relative;
     height: 25px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.98px;
@@ -618,7 +614,7 @@
     text-decoration: none;
     height: 25px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     border: none;
     font-weight: 400;
@@ -653,7 +649,7 @@
     position: relative;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -674,7 +670,7 @@
     padding: 16px 16px 16px 16px;
     background: #efabab;
     z-index: 65;
-    font-family: Domine, var(--default-font-family);
+    font-family: Domine;
     font-size: 20px;
     font-weight: 400;
     border-radius: 32px;
@@ -687,7 +683,7 @@
     position: relative;
     height: 28px;
     color: #000000;
-    font-family: Domine, var(--default-font-family);
+    font-family: Domine;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -727,7 +723,7 @@
     position: relative;
     height: 35px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 28px;
     font-weight: 400;
     line-height: 34.972px;
@@ -757,7 +753,7 @@
     width: 188px;
     height: 19px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -771,7 +767,7 @@
     position: relative;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -785,7 +781,7 @@
     position: relative;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -815,7 +811,7 @@
     width: 188px;
     height: 19px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -829,7 +825,7 @@
     position: relative;
     height: 24px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -870,7 +866,7 @@
     width: 188px;
     height: 23px;
     color: #000000;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 23px;
@@ -900,7 +896,7 @@
     position: relative;
     height: 22px;
     color: #161717;
-    font-family: Poppins, var(--default-font-family);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
@@ -930,7 +926,7 @@
     width: 188px;
     height: 19px;
     color: #000000;
-    font-family: Domine, var(--default-font-family);
+    font-family: Domine;
     font-size: 28px;
     font-weight: 400;
     line-height: 19px;
@@ -944,7 +940,7 @@
     position: relative;
     height: 32px;
     color: #000000;
-    font-family: Domine, var(--default-font-family);
+    font-family: Domine;
     font-size: 28px;
     font-weight: 400;
     line-height: 31.92px;

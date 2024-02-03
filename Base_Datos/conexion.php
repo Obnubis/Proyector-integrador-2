@@ -3,7 +3,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$password = "root";
+$password = "";
 $conexion = mysqli_connect($servidor, $usuario, $password) or die("Error de conexión");
 //Establecer la conexión 
 if (!$conexion) {
@@ -35,7 +35,7 @@ function getConexion(){
 
 $servidor = "localhost";
 $usuario = "root";
-$password = "root";
+$password = "";
 $database ="menteAtenta";
 $conexion = mysqli_connect($servidor, $usuario, $password,$database) or die("Error de conexión");
 //Establecer la conexión 
@@ -48,4 +48,3 @@ if (!$conexion) {
 }
 ?>
 
-?>

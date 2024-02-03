@@ -34,7 +34,7 @@
     width: 30px;
     height: 30px;
     margin: 2px 0 0 1089px;
-    background: url(/img/cruzo.png)
+    background: url(../img/cruzo.png)
       no-repeat center;
     background-size: cover;
     z-index: 36;
@@ -59,7 +59,7 @@
     position: relative;
     width: 475px;
     height: 500px;
-    background: url(/img/izquierda.png)
+    background: url(../img/izquierda.png)
       no-repeat center;
     background-size: cover;
     z-index: 3;
@@ -116,7 +116,7 @@
     width: 147px;
     height: 25px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 16px;
     font-weight: 400;
     line-height: 25px;
@@ -189,7 +189,7 @@
     height: 45px;
     top: 4px;
     left: 12.5px;
-    background: url(../imagen/inicioSesionRegistrarse/usuario\ 1.png)
+    background: url(../img/usuario.png)
       no-repeat center;
     background-size: cover;
     z-index: 13;
@@ -206,7 +206,7 @@
     top: 16px;
     left: 62.5px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
@@ -245,7 +245,7 @@
     top: 15px;
     left: 59.5px;
     color: #000000;
-    font-family: GFS Didot, var(--default-font-family);
+    font-family: GFS Didot;
     font-size: 20px;
     font-weight: 400;
     line-height: 22px;
@@ -262,7 +262,7 @@
     height: 39px;
     top: 7px;
     left: 12.5px;
-    background: url(/img/bloquear.png)
+    background: url(../img/bloquear.png)
       no-repeat center;
     background-size: cover;
     z-index: 18;
@@ -274,7 +274,7 @@
     height: 22px;
     top: 15px;
     left: 260.5px;
-    background: url(/icons/invisible\ 1.png)
+    background: url(../icons/invisible\ 1.png)
       no-repeat center;
     background-size: cover;
     opacity: 0.30000001192092896;
@@ -439,7 +439,7 @@
     position: relative;
     width: 23.142px;
     height: 23.142px;
-    background: url(/icons/icon\ _google_.png)
+    background: url(../icons/icon\ _google_.png)
       no-repeat center;
     background-size: 100% 100%;
     z-index: 31;
@@ -479,7 +479,7 @@
     position: relative;
     width: 24px;
     height: 24px;
-    background: url(/icons/facebook.png)
+    background: url(../icons/facebook.png)
       no-repeat center;
     background-size: cover;
     z-index: 34;
@@ -505,7 +505,7 @@
     height: 564px;
     top: 0;
     left: 0;
-    background: url(/img/fondo1.png)
+    background: url(../img/fondo1.png)
       no-repeat center;
     background-size: cover;
   }

@@ -1,0 +1,334 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    hr {
+      background-color: black;
+      height: 2px;
+  
+    }
+  
+    .main-container {
+      overflow: hidden;
+    }
+    
+    .main-container,
+    .main-container * {
+      box-sizing: border-box;
+    }
+    
+    input,
+    select,
+    textarea,
+    button {
+      outline: 0;
+    }
+    
+    .main-container {
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: auto;
+    position: relative;
+   
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+    }
+    .frame {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 290px;
+      position: relative;
+      width: 1440px;
+      height: 112px;
+      margin: 0 0 0 0;
+      padding: 16px 64px 16px 64px;
+      z-index: 65;
+    }
+    .frame-1 {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 290px;
+      position: relative;
+      width: 100%;
+      z-index: 66;
+    }
+    .frame-2 {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 64px;
+      position: relative;
+      width: 524px;
+      z-index: 67;
+    }
+    .image {
+      flex-shrink: 0;
+      position: relative;
+      width: 99px;
+      height: 77px;
+      background: url(/img/logo.png) no-repeat center;
+      background-size: cover;
+      z-index: 68;
+      border-radius: 32.5px;
+  } 
+    .buscador {
+      flex-shrink: 0;
+      position: relative;
+      width: 479px;
+      height: 35px;
+      background: #ffffff;
+      border: 1px solid #000000;
+      z-index: 69;
+      overflow: hidden;
+      border-radius: 32px;
+    }
+    .busqueda-icono {
+      position: relative;
+      width: 35px;
+      height: 35px;
+      margin: 0 0 0 444px;
+      background: url()
+        no-repeat center;
+      background-size: cover;
+      z-index: 70;
+      overflow: hidden;
+    }
+    .buscador-input {
+      position: absolute;
+      width: 479px;
+      height: 35px;
+      top: -1px;
+      left: -1px;
+      background: transparent;
+      border: none;
+      z-index: 71;
+      outline: none;
+    }
+    .frame-3 {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 23px;
+      position: relative;
+      width: 484px;
+      z-index: 72;
+    }
+    .primary-buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 16px;
+      position: relative;
+      width: 80px;
+      height: 24px;
+      padding: 16px 16px 16px 16px;
+      cursor: pointer;
+      background: #a9bab2;
+      border: none;
+      z-index: 73;
+      border-radius: 32px;
+      box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    }
+    .button-suscripcion {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: auto;
+      position: relative;
+      width: 75px;
+      height: 17px;
+      color: #000000;
+      font-family: Domine;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 74;
+    }
+    .primary-buttons-4 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 16px;
+      position: relative;
+      width: 80px;
+      height: 24px;
+      padding: 16px 16px 16px 16px;
+      cursor: pointer;
+      background: #a9bab2;
+      border: none;
+      z-index: 75;
+      border-radius: 32px;
+      box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    }
+    .button-productos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: auto;
+      position: relative;
+      width: 75px;
+      height: 17px;
+      color: #000000;
+      font-family: Domine;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 17px;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 76;
+    }
+    .primary-buttons-5 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 16px;
+      position: relative;
+      width: 80px;
+      height: 24px;
+      padding: 16px 16px 16px 16px;
+      cursor: pointer;
+      background: #a9bab2;
+      border: none;
+      z-index: 77;
+      border-radius: 32px;
+      box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    }
+    .button-servicios {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: auto;
+      position: relative;
+      width: 75px;
+      height: 17px;
+      color: #000000;
+      font-family: Domine;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 78;
+    }
+    .primary-buttons-6 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 16px;
+      position: relative;
+      width: 80px;
+      height: 24px;
+      padding: 16px 16px 16px 16px;
+      cursor: pointer;
+      background: #a9bab2;
+      border: none;
+      z-index: 79;
+      border-radius: 32px;
+      box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    }
+    .button-nosotros {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: auto;
+      position: relative;
+      width: 75px;
+      height: 17px;
+      color: #000000;
+      font-family: Domine;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16.8px;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 80;
+    }
+    .primary-buttons-contraste {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      gap: 16px;
+      position: relative;
+      width: 80px;
+      height: 24px;
+      padding: 16px 16px 16px 16px;
+      cursor: pointer;
+      background: #c84646;
+      border: none;
+      z-index: 81;
+      border-radius: 32px;
+      box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    }
+    .button {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-shrink: 0;
+      flex-basis: auto;
+      position: relative;
+      width: 80px;
+      height: 16px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: center;
+      white-space: nowrap;
+      z-index: 82;
+    }
+    .cerrar-sesion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: nowrap;
+      position: relative;
+      width: 1439px;
+      height: 623px;
+      margin: 0 0 0 0;
+      padding: 32px 64px 32px 64px;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      flex-shrink: 0;
+      position: relative;
+      width: 1303px;
+      z-index: 2;
+    }
