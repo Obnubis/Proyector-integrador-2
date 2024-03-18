@@ -1,0 +1,348 @@
+/* Estilos para el cuerpo y la estructura principal */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF;
+}
+
+.terapia {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+/* Estilos para la primera parte del contenido */
+.parte1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contenido1 {
+    width: 100%;
+    display: flex;
+    padding: 32px 64px;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    background-image: url(../img/terapia-onlineFondo.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+.contenido1 .izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.izquierda .texto1 {
+    color: #000;
+    font-family: Dosis;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.izquierda .texto2 {
+    color: #000;
+    font-family: ABeeZee;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.izquierda .texto3 {
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.izquierda .botonEmpezar {
+    display: inline-block;
+    padding: 8px 88px;
+    border-radius: 32px;
+    background-color: #EFACAC;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+border: none;
+font-weight: 400;
+line-height: 140%; /* 22.4px */
+}
+
+.izquierda .botonEmpezar:hover {
+    background: var(--contraste-clarito, #CD6161);
+    border: 1px solid black;
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.izquierda .botonEmpezar:active {
+    background: var(--clicked-contraste, #E2B2B2);
+}
+.contenido1 .derecha {
+    width: 470px;
+    height: 415px;
+    border-radius: 16px;
+}
+
+/* Estilos para la segunda parte del contenido */
+/* Estilos para la segunda parte del contenido */
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Elimina el padding horizontal */
+}
+
+.contenido2 {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 150%; /* Ajusta el ancho del contenedor */
+    max-width: 1200px; /* Agrega un ancho máximo para mantener la legibilidad */
+    padding: 20px; /* Ajusta el padding vertical según sea necesario */
+    background-color: #FFF;
+    border-radius: 10px;
+    margin-top: 20px; /* Añade un margen superior para separar de la parte 1 */
+}
+.menu button {
+    padding: 12px 24px;
+    background-color: #FFF;
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    border: none;
+    width: 229px;
+    height: 87px;
+}
+
+
+.menu button:hover {
+    background-color: #f0f0f0;
+}
+.menu button:active {
+    background-color: #b2a7a7;
+}
+
+
+.talleres {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #cebfbf;
+    border-radius: 10px;
+}
+
+.grupo1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.taller1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.taller1 .derecha {
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.taller1 .izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.taller1 .text {
+font-family: "GFS Didot";
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.taller1 .text2 {
+    color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.taller1 .botone {
+    padding: 8px 24px;
+    border-radius: 32px;
+    background: var(--rosa-contraste, #EFACAC);
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);    
+    text-decoration: none;
+    border: none;
+}
+
+.taller1 .botone:hover {
+    background: var(--contraste-clarito, #CD6161);
+    border: 1px solid black;
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);}
+
+.taller1 .botone:active {
+    background: var(--clicked-contraste, #E2B2B2);}
+
+
+.noSuscripto {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #FFF;
+}
+
+.noSuscriptoImagen {
+    width: 200px;
+    height: 180px;
+    background-image: url(../img/noSuscriptoTallereesCursos.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.noSuscriptoTexto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.noSuscrpTexto1 {
+    color: #000;
+    font-family: Domine;
+    font-size: 20px;
+}
+
+.botonIre {
+    padding: 12px 24px;
+    border-radius: 32px;
+    background-color: #EFACAC;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.botonIre:hover {
+    background-color: #d97979;
+}
+
+
+
+
+.grupo2 {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+/* Estilos generales para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .contenido1 {
+        padding: 20px; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .izquierda .texto1 {
+        font-size: 48px;
+    }
+    .izquierda .texto2 {
+        font-size: 32px;
+    }
+    .izquierda .texto3 {
+        font-size: 16px;
+    }
+
+    .contenido2 {
+        width: 100%; /* Ajusta el ancho del contenedor para dispositivos móviles */
+        padding: 10px; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .talleres {
+        padding: 10px; /* Ajusta el padding para dispositivos móviles */
+    }
+
+    .grupo1,
+    .grupo2 {
+        flex-direction: column; /* Cambia la dirección del flexbox para dispositivos móviles */
+    }
+
+    .taller1 {
+        width: 100%; /* Ajusta el ancho de los talleres para dispositivos móviles */
+    }
+
+    .taller1 .derecha {
+        width: 100%; /* Ajusta el ancho de la parte derecha de los talleres para dispositivos móviles */
+    }
+    .parte1 .contenido1 .derecha {
+        display: none; /* Oculta la imagen en dispositivos móviles */
+    }
+}
+
+/* Estilos para tabletas */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .contenido1 {
+        padding: 30px; /* Ajusta el padding para tabletas */
+    }
+
+    .izquierda .texto1 {
+        font-size: 58px;
+    }
+    .izquierda .texto2 {
+        font-size: 38px;
+    }
+    .izquierda .texto3 {
+        font-size: 20px;
+    }
+    .contenido2 {
+        width: 90%; /* Ajusta el ancho del contenedor para tabletas */
+    }
+
+    .talleres {
+        padding: 20px; /* Ajusta el padding para tabletas */
+    }
+    .parte1 .contenido1 .derecha {
+        width: 200px; /* Cambia el tamaño de la imagen en tablet según sea necesario */
+        height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    }
+}

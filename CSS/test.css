@@ -1,111 +1,75 @@
+/* Estilos CSS para el formulario */
+.box-3 {
+  padding: 2% 5%;
+  background: #c4bbbb;
+  text-align: center;
+}
 
-    .box-3 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: nowrap;
-      flex-shrink: 0;
-      gap: 10px;
-      position: relative;
-    
-      padding: 32px 469px 32px 469px;
-      background: #c4bbbb;
-      z-index: 17;
-    }
-    .text-6 {
-      flex-shrink: 0;
-      flex-basis: auto;
-      position: relative;
-      height: 61px;
-      color: #000000;
-      font-family: Dosis;
-      font-size: 48px;
-      font-weight: 400;
-      line-height: 60.672px;
-      text-align: left;
-      white-space: nowrap;
-      z-index: 18;
-    }
-    .wrapper-3 {
-      flex-shrink: 0;
-      position: relative;
-      height: 3159px;
-      background: #d4e8de;
-      z-index: 19;
-      overflow: hidden;
-    }
-    .wrapper-4 {
-      position: absolute;
-      height: 3027px;
-      top: 0;
-      left: 49px;
-      font-family: Poppins, var(--default-font-family);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-      z-index: 62;
-    }
-    .text-7 {
-      position: relative;
-      color: #000000;
-      font-family: Poppins, var(--default-font-family);
-      font-size: 20px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-    }
-    .text-8 {
-      position: relative;
-      color: #000000;
-      font-family: Poppins, var(--default-font-family);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: left;
-    }
-    .img {
-      position: absolute;
-      width: 234px;
-      height: 234px;
-      top: 564px;
-      left: 1065px;
-      background: url(./assets/images/ffa82281-808a-4ca5-bd34-b37516975ddd.png)
-        no-repeat center;
-      background-size: cover;
-      z-index: 20;
-    }
-    .pic-3 {
-      position: absolute;
-      width: 218px;
-      height: 234px;
-      top: 1209px;
-      left: 1081px;
-      background: url(./assets/images/d2af89eb-fd23-44ef-93c9-41bf5f555741.png)
-        no-repeat center;
-      background-size: cover;
-      z-index: 21;
-    }
-    .pic-4 {
-      position: absolute;
-      width: 234px;
-      height: 234px;
-      top: 1801px;
-      left: 1073px;
-      background: url(./assets/images/4b9262a5-4a06-475f-96c3-79814276d4c2.png)
-        no-repeat center;
-      background-size: cover;
-      z-index: 22;
-    }
-    .img-2 {
-      position: absolute;
-      width: 234px;
-      height: 234px;
-      top: 2393px;
-      left: 1081px;
-      background: url(./assets/images/040352be-d26c-40d4-9182-66940e1179d4.png)
-        no-repeat center;
-      background-size: cover;
-      z-index: 23;
-    }
-    
+.text-6 {
+  color: #000000;
+  font-family: Dosis;
+  font-size: 3vw; /* Mantenemos el tamaño relativo para pantallas más grandes */
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.wrapper-4 {
+  padding: 2% 5%;
+}
+
+.text-7 {
+  color: #000000;
+  font-family: Poppins, sans-serif;
+  font-size: 1.2em; /* Tamaño de letra específico para móviles y tabletas */
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Estilos para el botón y el mensaje de error */
+button[type="button"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em; /* Tamaño de letra específico para móviles y tabletas */
+  border-radius: 32px;
+  background: var(--rosa-contraste, #EFACAC);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover{
+  border-radius: 32px;
+background: var(--contraste-clarito, #CD6161);
+
+/* shadow */
+box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+button:active{
+  border-radius: 32px;
+background: var(--clicked-contraste, #E2B2B2);
+}
+#mensaje-error {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}
+
+
+
+/* Media query para tabletas y dispositivos móviles */
+@media (max-width: 768px) {
+  .text-6 {
+      font-size: 16px; /* Tamaño de letra específico para tabletas y móviles */
+  }
+  .text-7 {
+      font-size: 16px; /* Tamaño de letra específico para tabletas y móviles */
+  }
+  button[type="button"] {
+      font-size: 16px; /* Tamaño de letra específico para tabletas y móviles */
+  }
+}

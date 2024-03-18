@@ -1,0 +1,136 @@
+.parte1 {
+    text-align: center;
+    padding: 40px;
+    background-color: #AABBB2;
+}
+
+.contenido {
+    display: inline-block;
+    text-align: center;
+}
+
+.texto {
+    color: #000;
+    font-family: Dosis;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.texto1 {
+    color: #000;
+    text-align: center;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.frame22 {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 18px;
+}
+
+.texto2 {
+    color: #000;
+    text-align: center;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.tuOpinion {
+    /* display: inline-block; */
+    padding: 8px;
+    border: none;
+    border-radius: 25px;
+    background-color: #EFACAC;
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 33.6px */
+    transition: background-color 0.3s ease;
+}
+
+.tuOpinion:hover {
+    background: var(--contraste-clarito, #CD6161);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.tuOpinion:active {
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+/* Estilos para la parte 2 */
+.parte2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.contenido1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjeta {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.comentario {
+    color: #000;
+font-family: "GFS Didot";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.nombre1 {
+    color: #000;
+font-family: "GFS Didot";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    transition: color 0.3s ease;
+}
+
+.parte3 {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+}

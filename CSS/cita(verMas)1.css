@@ -1,0 +1,595 @@
+/* Estilos para hacer el diseño responsive */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.contenido {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 32px;
+    width: 100%;
+    min-height: 100vh; /* Ajusta la altura mínima para ocupar toda la pantalla */
+    background-image: url(../img/terapia-onlineFondo.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    padding-left: 20px;
+    border-left: 1px solid #000;
+}
+
+.izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-right: 20px;
+    /* Añade un espacio de relleno en el lado derecho */
+    width: 100%;
+    /* Ajusta el ancho al 100% en dispositivos móviles y tabletas */
+}
+
+.perfil {
+    display: flex;
+    padding: 32px 28px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    border: 1px solid #000;
+    background: #FFF;
+    margin-top: 20px;
+
+}
+
+
+
+/* Titulo */
+.titulo {
+    width: 100%;
+    height: 122px;
+    background: var(--cuadrados, #C5BCBC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.titulo1 {
+    color: #000;
+    font-family: Dosis;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.perfil .datosPersonales {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil .fotoMedico {
+    width: 120px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: 120px;
+    /* Ajusta el tamaño de la imagen según tus necesidades */
+    border-radius: 50%;
+    /* Hace que la imagen sea redonda */
+}
+
+.perfil .datos {
+    flex-grow: 1;
+}
+
+.texto2 {
+    color: #000;
+    font-family: ABeeZee;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.texto3 {
+color: #000;
+font-family: "GFS Didot";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.texto4 {
+color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.perfil .opiniones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.opiniones {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.opiniones .estrella img {
+    width: 24px;
+    height: auto;
+    margin-right: 5px;
+    /* Ajusta cualquier otro estilo que necesites para las estrellas */
+}
+
+
+
+
+
+.botonMedico {
+    border: none;
+    /* Elimina el borde del botón */
+    padding: 0;
+    /* Elimina el relleno del botón */
+    background: none;
+    /* Elimina el fondo del botón */
+    margin-right: 20px;
+    /* Agrega espacio a la derecha de cada botón */
+}
+
+.botonMedico a {
+    text-decoration: none;
+    color: #333;
+    /* Color del texto del enlace */
+}
+
+.botonMedico a:hover {
+    text-decoration: underline;
+    /* Subraya el texto del enlace al pasar el cursor sobre él */
+}
+
+.botonMedico:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último botón */
+}
+
+
+
+/* Consulta */
+.consulta {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.consulta .texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.consulta hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.consulta .direccion {
+    width: 100%;
+    max-width: 700px;
+    gap: 20px;
+}
+
+.consulta .texto1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.consulta .nOpinion {
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Experiencia */
+.experiencia {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.experiencia .texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experiencia hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.experienciaD .texto1 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experienciaD .nOpinion {
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+/* Opiniones de usuario */
+.opinionesUsuario {
+    background-color: #f9f9f9;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* Ajusta el margen superior */
+}
+
+.opinionesUsuario .texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    /* Ajusta el margen inferior */
+}
+
+.opinion1 {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.opinion1 .nombre {
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+    /* Ajusta el margen inferior */
+}
+
+.opinion1 .opinion {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+    /* Ajusta el margen inferior */
+}
+
+.opinion1 .estrella {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.opinion1 .estrella img {
+    width: 24px;
+    height: auto;
+    margin-right: 5px;
+}
+
+
+
+
+/* Currículum */
+.curriculum {
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+/* Botón de descarga */
+.curriculum {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    background: #f9f9f9;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.curriculum .texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.curriculum .butonDescarga {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 32px;
+    background: var(--rosa-contraste, #EFACAC);
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.curriculum .butonDescarga:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.curriculum .butonDescarga:active {
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    border: 1px solid #000;
+    background: #FFF;
+    /* Mismo ancho que la sección izquierda */
+    padding: 32px 28px;
+    /* Mismo relleno que la sección izquierda */
+    /* height: 247px; */
+    margin-right: 50px;
+}
+
+.formulario {
+ width: 45vh;
+}
+.contenidoCita {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+}
+
+
+.lineaNegra {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 1px;
+    background: #000;
+}
+
+.motivo,
+#dia,
+#hora {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    height: 30px;
+    /* Ajusta la altura según sea necesario */
+    border-radius: 16px;
+    background: #D9D9D9;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.enviarBoton {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 32px;
+    background: var(--rosa-contraste, #EFACAC);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22.4px */
+    border: none;
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.enviarBoton:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.enviarBoton:active {
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+
+.calentario {
+    width: 215px;
+    height: 194px;
+    flex-shrink: 0;
+    background-image: url(../img/calendario.png);
+}
+
+.menuMedico {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+}
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    .contenido {
+        flex-direction: column;
+        /* Cambia a disposición vertical en dispositivos móviles */
+    }
+    .menuMedico {
+        flex-direction: column;
+    }
+    .titulo1 {
+        font-size: 48px;
+    }
+    .izquierda,
+    .derecha {
+        width: 100%;
+        /* Ajusta el ancho al 100% en dispositivos móviles */
+        margin-right: 0;
+        /* Elimina el margen derecho en dispositivos móviles */
+    }
+
+    .derecha {
+        margin-top: 10px;
+        /* Ajusta el margen superior */
+    }
+
+    .perfil {
+        width: 100%;
+        padding: 10px;
+        /* Reducir el relleno en dispositivos móviles */
+    }
+
+    .perfil .fotoMedico {
+        width: 80px;
+        /* Reducir el tamaño de la imagen en dispositivos móviles */
+        height: 80px;
+        /* Reducir el tamaño de la imagen en dispositivos móviles */
+    }
+
+    .texto2 {
+        font-size: 30px;
+        /* Reducir el tamaño del nombre en dispositivos móviles */
+    }
+
+    .texto3 {
+    font-size: 20px;
+    }
+    .perfil .especialidad {
+        font-size: 16px;
+        /* Reducir el tamaño de la especialidad en dispositivos móviles */
+    }
+
+    .perfil .opiniones {
+        gap: 5px;
+        /* Reducir el espacio entre elementos en dispositivos móviles */
+    }
+
+    .opiniones .estrella img {
+        width: 20px;
+        /* Reducir el tamaño de las estrellas en dispositivos móviles */
+    }
+
+    .opiniones .nOpinion {
+        font-size: 14px;
+        /* Reducir el tamaño de la opinión en dispositivos móviles */
+    }
+}
+
+/* Ajustes para tabletas */
+/* Ajustes para tabletas */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .contenido {
+        flex-direction: column;
+        /* Volver a la disposición horizontal en tabletas */
+    }
+
+    .izquierda {
+        width: 100%;
+        /* Ajusta el ancho al 60% en tabletas */
+    }
+
+    .derecha {
+        width: 90%;
+        /* Ajusta el ancho al 40% en tabletas */
+        margin-left: 20px;
+        /* Aplica un margen izquierdo */
+        margin-top: 0;
+        /* Elimina el margen superior */
+    }
+
+    .formulario {
+        width: 35vh;
+    }
+    .perfil {
+        width: 100%;
+        /* Ajusta el ancho al 100% en tabletas */
+        padding: 20px;
+        /* Ajusta el relleno en tabletas */
+    }
+
+    .perfil .fotoMedico {
+        width: 80px;
+        /* Reducir el tamaño de la imagen en tabletas */
+        height: 80px;
+        /* Reducir el tamaño de la imagen en tabletas */
+    }
+
+    .perfil .nombre {
+        font-size: 20px;
+        /* Reducir el tamaño del nombre en tabletas */
+    }
+
+    .perfil .especialidad {
+        font-size: 16px;
+        /* Reducir el tamaño de la especialidad en tabletas */
+    }
+
+    .perfil .opiniones {
+        gap: 5px;
+        /* Reducir el espacio entre elementos en tabletas */
+    }
+
+    .opiniones .estrella img {
+        width: 20px;
+        /* Reducir el tamaño de las estrellas en tabletas */
+    }
+
+    .opiniones .nOpinion {
+        font-size: 14px;
+        /* Reducir el tamaño de la opinión en tabletas */
+    }
+}
+
+
+/* Ajustes para dispositivos mayores */
+@media (min-width: 1024px) {
+    .derecha {
+        /* width: 30%; */
+        /* Ajusta el ancho al 30% en dispositivos mayores */
+        margin-left: 50px;
+        /* Aplica un margen izquierdo */
+        margin-top: 20px;
+        /* Ajusta el margen superior */
+    }
+}

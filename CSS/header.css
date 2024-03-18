@@ -1,0 +1,239 @@
+/* Import de la fuente Popins de Google-fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+
+/* Colores */
+:root {
+    --clicked: #BCDFCE;
+    --desactivado: rgba(125, 106, 106, 0.50);
+}
+
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    
+}
+
+/* Estilos para el header */
+header{
+    /*background-color: #222;*/
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2rem;
+}
+
+.logo-header img{
+    width: 100px;
+}
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+.nav-menu li{
+    margin-right: 1rem;
+}
+
+.nav-menu li:last-child{
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none;
+}
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        z-index: 1000; /* Valor alto para asegurar que esté por encima de todo */
+
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        right: -100%; 
+        background: #fdfbfb;
+        width: 23%;
+        height: 50vh;
+        /* left: 0; */ /* Esta línea ya no es necesaria */
+        z-index: 999; /* Valor alto para asegurar que esté por encima del resto del contenido */
+
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        right: 0;  /* Cambiado de left: 0; a right: 0; */
+        transition: all .25s;
+    }
+}
+
+
+.buttons ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    padding: 5px 10px;
+}
+
+.nav-menu .register-button {
+    background-color: #cd6161;
+}
+
+.button {
+    gap: 10px;
+    padding: 7px 16px;
+    width: 102px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--clicked, #BCDFCE);
+    color: black;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    font-family: 'Domine';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buttton {
+    gap: 10px;
+    padding: 7px 16px;
+    width: 102px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: var(--clicked, #BCDFCE);
+    color: black;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+    font-family: 'Domine';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+.micuenta-button {
+    background: var(--contraste-definitivo, #EFACAC);
+}
+
+.micuenta-button:hover {
+    background: var(--contraste-clarito, #CD6161);
+}
+
+.micuenta-button:active {
+    background: var(--clicked-contraste, #E2B2B2);
+}
+
+.micuenta-button:disabled {
+    background: var(--desactivado, rgba(125, 106, 106, 0.50));
+    cursor: not-allowed;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    color: #191717
+}
+.button:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #d4e8de;
+    text-decoration: none;
+}
+
+.register-button:hover {
+    background-color: #fc5454;
+}
+
+/* Estilo cuando el botón está desactivado */
+.button:disabled {
+    padding: 16px;
+    gap: 16px;
+    background-color: var(--desactivado, rgba(125, 106, 106, 0.50));
+    text-decoration: none;
+
+}
+.button:active {
+    display: flex;
+    width: 102px;
+    height: 38px;
+    padding: 7px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: var(--clicked, #BCDFCE);
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+    background-color: #6fa4b2; /* Cambia el color al hacer clic */
+    text-decoration: none;
+
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    background-color: white;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 10px;
+    color: #999;
+    cursor: pointer;
+}
+
+

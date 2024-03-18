@@ -1,0 +1,75 @@
+/* RESPONSIVE NO TOCAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer {
+    background-color: #eee; /* Cambiar el color de fondo a gris claro */
+    color: #333; /* Cambiar el color del texto a oscuro para que sea legible */
+    padding: 30px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #333; /* Cambiar el color del texto del enlace */
+    text-decoration: none;
+}
+
+.social-icons a {
+    color: #333; /* Cambiar el color de los íconos de redes sociales */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.payment-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos para hacer responsive */
+@media screen and (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%;
+    }
+}

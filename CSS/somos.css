@@ -1,0 +1,314 @@
+/* Estilos base */
+.parte1 {
+    background-color: #AABBB2;
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Alineación del texto */
+    height: 100%; /* Altura fija, ajustar según sea necesario */
+    background-image: url(../img/fondoSomos.jpg);
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.textos .texto1 {
+    font-family: ABeeZee;
+    font-size: 48px;    
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+}
+
+.textos .texto2 {
+    font-family: Dosis;
+    font-size: 64px;    color: #555; /* Color del texto */
+}
+
+.textos .texto3 {
+    font-family: "GFS Didot";
+    font-size: 24px;    color: #777; /* Color del texto */
+}
+
+/* Parte 2 */
+.parte2 {
+    background-color: #f9f9f9; /* Color de fondo */
+    padding: 20px; /* Espacio interno */
+    text-align: center; /* Alineación del texto */
+}
+
+.textos1 {
+    text-align: center; /* Alineación del texto */
+}
+
+.titulo {
+    color: #000;
+    text-align: center;
+    font-family: Dosis;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.texto1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio superior */
+}
+
+.derecha {
+
+    max-width: 100%; /* Ancho máximo del texto */
+    color: #000;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.izquierda {
+    margin-left: 100px; /* Mueve la imagen a la derecha */
+}
+
+.imgizq {
+    max-width: 300px; /* Ancho máximo de la imagen */
+}
+/* Estilos para la parte 3 */
+.parte3 {
+    background-color: #AABBB2;
+    padding: 40px; /* Ajusta el espacio interno según sea necesario */
+}
+
+.dentro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.izquierda {
+    max-width: 40%; /* Ajusta el ancho máximo según sea necesario */
+}
+
+.izquierda img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+}
+
+.derecha {
+    max-width: 55%; /* Ajusta el ancho máximo según sea necesario */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarjeta3 {
+    width: 48%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.tarjeta3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta {
+   color: #000;
+font-family: Domine;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.texto {
+color: #000;
+font-family: "GFS Didot";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.opiniones {
+    background: var(--rosa-contraste, #EFACAC);
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+    border: none;
+    padding: 10px 150px;
+    font-size: 16px;
+    border-radius: 32px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.opiniones:hover {
+    background: var(--contraste-clarito, #CD6161);
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.opiniones:active {
+    background: var(--clicked-contraste, #E2B2B2);
+}
+/*PARTE 4*/
+.parte4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/fondoSomosabajo.jpg);
+    background-size: cover; /* La imagen se ajustará para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    padding: 20px;
+}
+
+
+/* Estilos para la parte izquierda */
+.izquierda {
+    flex: 1;
+    /* margin-right: 20px; */ /* Añade un margen a la derecha para separar la imagen de las tarjetas */
+}
+
+.izquierda img {
+    /* width: 500px; */
+    height: auto;
+    border-radius: 8px;
+}
+
+.contenido4 {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos de manera vertical */
+    align-items: center;
+}
+
+.derecha1 {
+    text-align: center;
+    flex: 1; /* Para que las tarjetas ocupen el espacio restante */
+}
+
+.partes1,
+.partes2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta4 {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 0;
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    width: calc(25% - 20px);
+}
+
+.tarjeta4:hover {
+    transform: scale(1.05);
+}
+
+.titulo5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.pelita {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.dentro4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.titulo1 {
+    color: #000;
+    font-family: Domine;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .izquierda {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .derecha {
+        max-width: 100%;
+    }
+
+    .tarjeta3,
+    .tarjeta4 {
+        width: 100%;
+    }
+}
+
+/* Reglas de medios para tablet */
+@media screen and (max-width: 768px) {
+    .izquierda {
+        margin-left: 0; /* Restablecer margen para centrar la imagen */
+    }
+    .tarjeta {
+        width: 100%; /* Ajustar el ancho para ocupar la mitad de la página menos el margen */
+        margin: 10px; /* Espacio entre tarjetas */
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+    .texto {
+        font-size: 16px;
+    }
+    .titulo1 {
+        font-size: 20px;
+    }
+}
+
+/* Reglas de medios para móvil */
+/* Reglas de medios para móviles */
+@media screen and (max-width: 576px) {
+
+
+    .izquierda,
+    .derecha,
+    .textos,
+    .textos1,
+    .dentro,
+    .tarjeta3,
+    .tarjeta4 {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+        max-width: 100%; /* Ancho máximo en dispositivos móviles */
+    }
+
+    .izquierda,
+    .izquierda img {
+        display: none; /* Ocultar la imagen y su contenedor */
+    }
+}

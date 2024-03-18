@@ -1,34 +1,33 @@
+/* Estilos generales */
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #fff;
+
 }
 
-.group .group-3 .text-5 a{
-  color: #000;
-  text-decoration: none;
-}
-
+/* Estilos para la sección hero */
 .hero {
-  height: 623px;
+  height: 80vh;
+  /* Reducir la altura del héroe en dispositivos móviles */
   background-image: url(../img/fondo.jpeg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1519px;
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero h1 {
+.hero .texto {
   margin: 0;
-  margin-top: 100px;
   color: #000;
   text-align: center;
-
-  /* Dosis */
   font-family: Dosis;
   font-size: 64px;
   font-style: normal;
@@ -36,408 +35,585 @@ body {
   line-height: 140%; /* 89.6px */
 }
 
-.start_button {
-  display: flex;
+.start_button,
+.start_now,
+.comienza{
   width: 298px;
-  height: 70px;
-  padding: 16px;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
+  /* padding: 16px; */
   border-radius: 32px;
-  background: var(--contraste-definitivo, #aabbb2);
+  background: var(--rosa-contraste, #EFACAC);
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  color: black;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px !important;
+  border: none !important;
+}
+
+.start_button:hover ,
+.start_now:hover ,
+.comienza:hover {
+  border-radius: 32px;
+  background: var(--contraste-clarito, #CD6161);
 
   /* shadow */
   box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
-  position: absolute;
-  left: 650px;
-
-  color: #000;
-  font-family: Poppins;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
 }
 
-.hero .start_button a {
-  text-decoration: none;
-  color: inherit;
+.start_button:active ,
+.start_now:active ,
+.comienza:active {
+  border-radius: 32px;
+  background: var(--clicked-contraste, #E2B2B2);
 }
 
+/* Estilos para la sección de productos */
 .products {
+  padding: 5% 2%;
+  /* Ajustes de espacio */
+  box-sizing: border-box;
+  background-color: #fff;
   display: flex;
-  height: 728px;
   flex-direction: column;
   align-items: center;
-  gap: 29px;
-  flex-shrink: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 1519px;
-  text-align: center;
-  background-color: #fff;
-  position: relative;
+  gap: 16px;
 }
 
+.card:hover {
+  transform: translateY(-10px);
+  /* Efecto de levantamiento al hacer hover */
+}
+
+.texto2 {
+  color: #000;
+  font-family: ABeeZee;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.texto6 {
+  color: #000;
+  font-family: "GFS Didot";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.texto7 {
+  color: #000;
+  font-family: "GFS Didot";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.plan {
+  width: 180px;
+  height: 36px;
+  /* padding: 16px; */
+  border-radius: 32px;
+  background: var(--rosa-contraste, #EFACAC);
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  color: black;
+  font-family: Poppins;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px !important;
+  border: none !important;
+}
+
+
+.plan:hover {
+  border-radius: 32px;
+  background: var(--contraste-clarito, #CD6161);
+
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+
+.plan:active {
+  border-radius: 32px;
+  background: var(--clicked-contraste, #E2B2B2);
+}
+
+.planese {
+  width: 180px;
+  height: 36px;
+  /* padding: 16px; */
+  border-radius: 32px;
+  background: var(--verde-secundario-pastel, #AABBB2);
+
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  color: black;
+  font-family: Poppins;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px !important;
+  border: none !important;
+}
+.planese:hover {
+  border-radius: 32px;
+  background: var(--verde-pastel, #D4E8DE);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.planese:active {
+  border-radius: 32px;
+  background: var(--clicked, #BCDFCE);
+}
 .products .card_container {
   display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 29px;
   flex-wrap: wrap;
-  width: 100%;
-  text-align: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .card {
   display: flex;
+  gap: 16px;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  width: 260px;
-  height: 367px;
-  padding: 32px;
+  width: 300px;
+  /* Ancho aumentado */
+  height: auto;
+  /* Permitir que la altura se ajuste automáticamente al contenido */
   border-radius: 32px;
-  background: var(--cuadrados, #c5bcbc);
+  background: #c5bcbc;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  /* Añadir espacio interno */
+  text-align: center;
+  /* Centrar el contenido */
+  overflow: hidden;
+  /* Ocultar contenido que se desborda del contenedor */
+  transition: transform 0.3s ease;
+  line-height: 1.5;
 }
 
 .card img {
-  max-width: 100%;
-  margin-bottom: 16px;
+  width: 100%;
+  /* Hacer que la imagen ocupe todo el ancho de la tarjeta */
+  height: auto;
+  /* Permitir que la altura se ajuste automáticamente al ancho */
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
 }
 
-.card h1,
-.card h3 {
-  text-align: center;
-  margin: 0;
-}
-
-.button_container {
-  position: relative;
-  margin-top: 20px; /* Ajusta según sea necesario */
-}
-
-.start_now {
+/* Estilos para la sección de asesores */
+.asesor {
+  padding: 5% 2%;
+  /* Ajustes de espacio */
+  box-sizing: border-box;
+  background-color: #d4e8de;
   display: flex;
   justify-content: center;
+  /* Centrar horizontalmente el contenido */
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
-  width: 398px;
-  height: 70px;
-  padding: 16px;
-  border-radius: 32px;
-  background: var(--contraste-definitivo, #aabbb2);
-  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
-  color: #000;
-  font-family: Poppins;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-}
-
-.start_now a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.products .start_now a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.asesor {
-  display: flex;
-  height: 780px;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 29px;
-  flex-shrink: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 1519px;
   text-align: center;
-  background-color: #d4e8de;
+  /* Alinear el texto al centro */
 }
 
 .text-container {
-  text-align: left;
-  max-width: 50%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ gap: 32px;
+}
+
+.texto8 {
   color: #000;
   font-family: Dosis;
-  font-size: 28px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.text-container h4 {
-  margin: 0 auto; /* Ajusta según sea necesario */
+.texto3 {
+  color: #000;
+  text-align: center;
+  font-family: Domine;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* Tamaño de fuente para dispositivos de tamaño mediano */
 }
 
-.comienza {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  width: 298px;
-  height: 70px;
-  padding: 16px;
-  border-radius: 32px;
-  background: var(--contraste-definitivo, #aabbb2);
-  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+.texto4 {
   color: #000;
+  text-align: center;
   font-family: Poppins;
-  font-size: 36px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 140%;
-  margin-left: 120px;
-  margin-top: 20px
+  line-height: normal;
 }
 
-.comienza a {
-  text-decoration: none;
-  color: inherit;
+.text-container h3 {
+  font-size: 1.5rem;
+  /* Tamaño de fuente para dispositivos de tamaño mediano */
+}
+
+.text-container h4 {
+  font-size: 1rem;
+  /* Tamaño de fuente para dispositivos de tamaño mediano */
 }
 
 .image-container {
-  max-width: 50%; /* Ajusta según sea necesario */
+  max-width: 100%;
+  /* Ocupar todo el ancho del contenedor */
+  margin-top: 20px;
+  /* Agregar espacio superior entre el texto y la imagen */
 }
 
 .image-container img {
   max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+  /* Agregar transición para un cambio suave */
 }
 
-.servicios {
-  display: flex;
-  padding: 32px 64px;
-  flex-direction: row;
-  align-items: center;
-  gap: 239px;
-  width: 1519px;
 
+
+
+/* Estilos para la sección de servicios */
+.servicios {
+  padding: 5% 2%;
+  /* Ajustes de espacio */
   box-sizing: border-box;
-  text-align: center;
-  background-color: #ffff;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .column {
-  flex-direction: column;
-  flex-shrink: 0;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 200px;
+  /* Ancho completo en dispositivos de pantalla pequeña */
   text-align: center;
-  background-color: #ffff;
-  display: flex;
-
-  gap: 64px;
+  /* Alinear el contenido al centro */
+  margin-bottom: 20px;
+  
 }
 
-.plans {
-  margin-top: -70px;
+.anounce,
+.health {
+  width: 100%;
   display: flex;
-  width: 536px;
-  height: 387px;
-  padding: 16px 0px;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: var(--cuadrados, #c5bcbc);
-}
-
-.anounce {
-  display: flex;
-  width: 549px;
   padding: 32px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   border-radius: 32px;
-  background: var(--cuadrados, #c5bcbc);
+  background: var(--cuadrados, #C5BCBC);
 }
 
-.health {
-  display: flex;
-  width: 549px;
-  padding: 16px 36px;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 32px;
-  flex-wrap: wrap;
-  border-radius: 32px;
-  background: var(--cuadrados, #c5bcbc);
-}
-
-.image {
-  width: 234px;
-  height: 213px;
-  flex-shrink: 0;
-  margin-top: 30px;
-}
-
-.planes{
-  display: flex;
-width: 180px;
-height: 36px;
-padding: 16px;
-justify-content: center;
-align-items: center;
-gap: 16px;
-flex-shrink: 0;
-border-radius: 32px;
-background: var(--verde-secundario-pastel, #AABBB2);
-
-/* shadow */
-box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
-}
-
-.planes a{
-  text-decoration: none;
+.texto11 {
   color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.plan{
+.anounce .planes,
+.health .planes {
+  display: inline-block;
+  /* Mostrar los botones en línea */
+  margin-top: 10px;
+  /* Espacio superior entre los botones */
+}
+
+/* Resto de estilos para la sección de servicios, valoración y cartas, similar a las secciones anteriores */
+
+/* Estilos para la sección de servicios */
+
+.valoracion {
+  background-image: url(../img/fondo4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5% 2%;
+  box-sizing: border-box;
   display: flex;
-  width: 180px;
-  height: 36px;
-  padding: 16px;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 32px;
+}
+
+.servicios .column {
+  /* flex-basis: calc(33.33% - 40px);
+  /* Ajuste del ancho de las columnas 
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  Sombra suave */
+  display: flex;
+    padding: 32px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.servicios .plans {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  display: flex;
   gap: 16px;
-  flex-shrink: 0;
-  border-radius: 32px;
-  background: var(--verde-secundario-pastel, #AABBB2);
-  
-  /* shadow */
-  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #c5bcbc;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  /* Espaciado inferior */
+}
+/* Estilos para las cartas de valoración */
+.cartas {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  /* Permitir que las cartas se envuelvan en dispositivos de tamaño medio */
 }
 
-.servicios .plans h1,
-.servicios .plans h2,
-.servicios .column h3 {
+.cards {
+  width: 320px;
+  /* Ancho fijo para las cartas */
+  min-height: 238px;
+  /* Altura mínima para las cartas */
+  padding: 30px;
+  /* Aumentar el espacio interno */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 0; 
-  line-height: 1.5; 
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  /* Espaciado inferior entre las cartas */
 }
 
-.servicios .plans h1{
-  color: #FFF;
-text-align: center;
-font-family: Domine;
-font-size: 50px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+.cards:hover {
+  transform: translateY(-10px);
 }
 
-.servicios .plans h2 {
-  color: #FFF;
+.cards h2 {
+  font-size: 1.8rem;
+  /* Tamaño de fuente aumentado */
+  color: #333;
+  margin-bottom: 15px;
+  /* Espaciado inferior del título */
+}
+
+.cards h3 {
+  font-size: 1.2rem;
+  /* Tamaño de fuente aumentado */
+  color: #666;
+}
+
+.hero,
+.asesor,
+.servicios,
+.valoracion,
+.cartas {
+  text-align: center;
+}
+
+/* Estilos para los botones */
+.start_button,
+.start_now,
+.comienza {
+  margin: 0 auto;
+  /* Esto centra horizontalmente los elementos */
+  display: block;
+  /* Esto garantiza que ocupen todo el ancho disponible */
+}
+
+.texto5 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 29.4px */
+  text-align: center;
+}
+
+.texto9 {
+  text-align: center;
+  font-family: Domine;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+}
+
+.texto10 {
+  color: var(--blanco, #FFF);
   font-family: "GFS Didot";
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-.servicios .column h3 {
-  color: #000;
-text-align: center;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+/* Estilos para la sección de servicios */
+.plans .image,
+.column .image {
+  max-width: 100%;
+  height: auto;
+  width: 234px;
+  transition: all 0.3s ease;
+  /* Agregar transición para un cambio suave */
 }
 
-.servicios .column h2{
-  color: #000;
-text-align: center;
-font-family: "GFS Didot";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+/* Estilos Responsivos */
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex-basis: calc(50% - 40px);
+    /* Ajuste del ancho de las columnas en dispositivos móviles */
+  }
+
+  .products .card_container {
+    justify-content: center;
+  }
+
+  .cartas {
+    flex-direction: column;
+    /* Apilar las cartas en dispositivos móviles */
+    align-items: center;
+  }
+
+  .cards {
+    width: 90%;
+    /* Ancho del 90% del contenedor en dispositivos móviles */
+  }
+
+  .hero {
+    height: 45vh;
+    /* Reducir aún más la altura del héroe en dispositivos móviles */
+  }
+
+  .hero .texto {
+    font-size: 32px;
+    /* Tamaño de fuente más pequeño en dispositivos móviles */
+  }
+
+
+  .hero .start_button {
+    width: 102px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .start_now{
+    width: 180px;
+  }
+  .texto5 {
+    font-size: 16px;
+  }
+  .products .texto2 {
+    font-size: 32px;
+  }
+  .image-container img {
+    max-width: 0;
+    /* Hacer que las imágenes se hagan más pequeñas */
+  }
+
+  .plans .image,
+  .column .image {
+    max-width: 0;
+    /* Hacer que las imágenes se hagan más pequeñas */
+  }
+
+  .texto3 {
+    font-size: 16px;
+    /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .texto4 {
+    font-size: 16px;
+    /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+  .texto5 {
+    font-size: 16px;
+  }
+  .texto10 {
+    font-size: 24px;
+  }
+
+  .texto9 {
+    font-size: px;
+  }
+
+  .text-container h4 {
+    font-size: 0.8rem;
+    /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
 }
 
-.valoracion{
- background-image: url(../img/fondo4.jpg);
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center;
- display: flex;
-height: 580px;
-padding: 32px 64px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 16px;
-width: 1519px;
+/* Estilos para dispositivos de pantalla pequeña y tablet (hasta 1024px) */
+@media screen and (max-width: 1024px) {
+  .column {
+    width: 100%;
+    /* Ancho completo en dispositivos de pantalla pequeña y tablet */
+    text-align: center;
+    /* Alinear el contenido al centro */
+    margin-bottom: 20px;
+  }
+
+
+  .cards {
+    width: 45%;
+    /* Ancho del 45% del contenedor en dispositivos de tamaño medio */
+  }
+
+  .anounce h3,
+  .health h3 {
+    margin-top: 10px;
+    /* Espacio superior entre el texto y el botón */
+  }
+
+  .anounce .planes,
+  .health .planes {
+    display: inline-block;
+    /* Mostrar los botones en línea */
+    margin-top: 10px;
+    /* Espacio superior entre los botones */
+  }
+
+  /* Ajuste para colocar .column debajo de .plans en tablet */
+  .servicios {
+    flex-direction: column;
+    align-items: center;
+  }
+
 }
-
-.cartas{
-  display: flex;
-  width: 1390px;
-  height: 580px;
-  padding: 32px 64px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.cards{
-  background-color: white;
-  border-radius: 64px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  display: flex;
-  width: 340px;
-  height: 334px;
-  padding: 8px 16px;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-}
-
-.profile{
-  width: 127px;
-height: 123px;
-flex-shrink: 0;
-border-radius: 64px;
-}
-
-.cards h3{
-  width: 80%;
-height: 63px;
-margin:  0 auto;
-color: #000;
-text-align: center;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-.cards h2{
-  color: #000;
-font-family: "GFS Didot";
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
- 
-
-
-
-

@@ -1,0 +1,323 @@
+.calendario {
+    width: 100%;
+    /* Agrega otros estilos para el contenido debajo del menú */
+    /* Por ejemplo, puedes establecer márgenes superiores para separarlo del menú */
+    margin-top: 20px;
+    /* Ajusta según sea necesario */
+    /* overflow: hidden;
+    position: relative; */
+}
+
+.contenido {
+    position: relative;
+    z-index: 1;
+    max-width: calc(100% - 64px);
+    margin: 0 auto;
+    /* padding: 20px;*/
+}
+
+/* Estilos generales */
+body {
+    font-family: 'ABeeZee', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contexto {
+    width: 80%;
+    padding: 20px;
+}
+
+.derecha {
+    margin-left: 20px;
+}
+
+.titulo,
+.titulo1 {
+   text-align: center;
+   margin-bottom: 20px;
+   color: #000;
+   text-align: center;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   font-family: ABeeZee;
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   }
+
+/* Estilos para las tarjetas de citas */
+
+.lasCitas {
+    display: flex;
+    /* Cambiar el contenedor a un flexbox */
+    flex-wrap: wrap;
+    /* Permitir que las tarjetas se envuelvan en varias líneas */
+    justify-content: space-between;
+    /* Distribuir las tarjetas uniformemente */
+}
+
+.tarjeta {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: calc(35% - 50px); /* Calculamos el ancho con margen entre las tarjetas  */
+    transition: all 0.3s ease;
+    /* Agregar transiciones */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Agregar sombra */
+}
+
+.tarjeta:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.texto1 {
+    font-weight: bold;
+}
+
+.texto2 {
+    color: #666;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.image-27 {
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    top: 110px;
+    background: url(../img/fondo1.png) no-repeat center;
+    background-size: cover;
+}
+.suscripcion-container {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: 10px 300px; /* Centra el contenedor y aplica un margen superior */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.suscripcion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoSinSuscripcion {
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.textoSinSuscripcion1 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.butonIr {
+    width: 180px;
+    height: 36px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    border-radius: 32px;
+    background: var(--rosa-contraste, #EFACAC);
+    border: none;
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+
+.butonIr:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.butonIr:active{
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+
+.datos {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: 10px 300px; /* Centra el contenedor y aplica un margen superior */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+.texto2 {
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.formulario1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.rellenar {
+    display: flex;
+    align-items: center;
+}
+
+.textoRellenar {
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 20px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.textoResponder {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+}
+.botones-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.butonEnviar {
+    width: 120px; /* Ancho de los botones */
+    height: 36px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #070707;
+    font-size: 16px;
+    border: none;
+    border-radius: 32px;
+    background-color: #EFACAC;
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.butonEnviar:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+    
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.butonEnviar:active{
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+/* Estilo para los campos de entrada en modo readonly */
+.textoResponder[readonly] {
+    background-color: #f4f4f4; /* Cambiar el color de fondo */
+    color: #555; /* Cambiar el color del texto */
+    border: 1px solid #ccc; /* Cambiar el borde */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenido {
+        padding: 10px;
+    }
+
+    .contexto {
+        width: 100%;
+        padding: 10px; /* Ajustamos el padding para dispositivos móviles */
+    }
+
+    .derecha {
+        margin-left: 0;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .suscripcion-container,
+    .datos {
+        width: 90%; /* Reducimos el ancho para dispositivos móviles */
+        margin: 10px auto; /* Centramos y aplicamos un margen */
+        padding: 15px; /* Reducimos el padding */
+    }
+
+    .textoSinSuscripcion {
+        font-size: 20px; /* Reducimos el tamaño de fuente */
+    }
+
+    .textoSinSuscripcion1 {
+        font-size: 14px; /* Reducimos el tamaño de fuente */
+    }
+
+    .butonIr {
+        font-size: 14px; /* Reducimos el tamaño de fuente */
+        padding: 5px 10px; /* Ajustamos el padding */
+    }
+
+    .formulario1 {
+        align-items: center; /* Centramos los elementos en dispositivos móviles */
+    }
+
+    .textoRellenar {
+        width: auto; /* Ajustamos el ancho automático */
+        margin-right: 0; /* Eliminamos el margen derecho */
+    }
+
+    .textoResponder {
+        width: 100%; /* Ajustamos el ancho al 100% */
+    }
+}
+
+/* Ajustes para tabletas y dispositivos con resoluciones más grandes */
+@media (max-width: 1024px) {
+    .background-image {
+        position: absolute;
+        /* Ajusta el top según sea necesario, esto evitará que la imagen se desplace debajo del footer */
+        top: 110px;
+    }
+}

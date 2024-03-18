@@ -1,51 +1,185 @@
+/* RESPONSIVE BIEN NO TOCAR */
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #d4e8de;
+    /* background-color: #d4e8de; */
 }
 
 form {
-    margin-left: 100px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    /* gap: 32px; */
     justify-content: center;
 }
 
-input[type="text"] {
-    padding: 8px;
-    margin: 8px 0; 
+
+.titulo {
+    color: #000;
+    font-family: Dosis;
+    font-size: 3rem;
+    /* Cambia a unidades relativas */
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+    /* justify-content: center; */
+    gap: 32px;
+
+}
+
+.texto {
+    color: #000;
+    font-family: "GFS Didot";
+    font-size: 1.5rem;
+    /* Cambia a unidades relativas */
+}
+
+/* Estilos para centrar el contenido */
+.main {
+    background-image: url(../img/fondocontacto.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Esto centra el contenido verticalmente en la pantalla */
+    padding: 20px;
+    /* Agregamos un poco de espacio alrededor del contenido */
+    box-sizing: border-box;
+    /* Hace que el padding se incluya en el tamaño total del elemento */
+}
+
+.contexto {
+    width: 100%;
+    /* Ajustamos el ancho del contexto al 100% */
+    max-width: 800px;
+    /* Establecemos un ancho máximo para el contexto */
+}
+
+/* Aumentar el tamaño de los inputs */
+.caja,
+.caja1,
+.enviar,
+select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 5px;
+    box-sizing: border-box;
+    /* Hace que el padding se incluya en el tamaño total del elemento */
 }
 
-input[type="submit"] {
-    padding: 8px 12px;
-    margin: 12px 0;
-    background-color: #efacac;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.caja,
+.caja1 {
+    padding: 16px;
+    /* Ajusta el padding */
 }
 
-h1, h3, .der, .der .empresa{
-    margin-left: 100px;
-    text-align: left; /* Add this line to align text to the left */
+.enviar {
+    /* height: 50px; /* Ajusta la altura  */
+    font-size: 1.2rem;
+    /* Cambia a unidades relativas */
 }
 
-
-.main{
-    display:flex;
-    flex-direction: row;
+.der {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3em;
 }
 
-.der{
-    margin-left: 500px;
+.texto2 {
+    color: #000;
+    font-family: Dosis;
+    font-size: 3rem;
+    /* Cambia a unidades relativas */
 }
 
+.enviar{
+    display: flex;
+    width: 360px;
+    height: 48px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: var(--rosa-contraste, #EFACAC);
+
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.enviar:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.enviar:active {
+    border-radius: 32px;
+background: var(--clicked-contraste, #E2B2B2);
+};
 .der p {
     margin-bottom: 8px;
+}
+
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 1200px) {
+    .contenido {
+        flex-direction: row;
+    }
+
+    .contexto {
+        /* width: 45%; */
+        max-width: none;
+        /* Quitamos el ancho máximo para que pueda ocupar todo el espacio disponible */
+        margin-right: 20px;
+        /* Añadimos un espacio de separación entre los elementos */
+    }
+
+    .der {
+        width: 45%;
+        max-width: none;
+        /* Quitamos el ancho máximo para que pueda ocupar todo el espacio disponible */
+    }
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 600px) {
+    .contenido {
+        justify-content: space-between;
+    }
+
+    /* .caja,
+    .caja1,
+    .enviar {
+        width: 45%; /* Ajusta el ancho de los elementos en pantallas medianas 
+    } */
+}
+
+@media only screen and (min-width: 900px) {
+
+    .texto {
+        font-size: 1.5rem;
+        /* Ajusta el tamaño de fuente en pantallas grandes */
+    }
+
+    /* .caja,
+    .caja1,
+    .enviar {
+        width: 30%; /* Ajusta el ancho de los elementos en pantallas grandes 
+    } */
 }

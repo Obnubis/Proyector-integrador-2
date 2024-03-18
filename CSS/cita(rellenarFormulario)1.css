@@ -1,0 +1,315 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.suscripciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url(../img/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+.contenido {
+  display: flex;
+  margin-top: 32px;
+  align-items: flex-start;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%; /* Ajusta el ancho del formulario al 100% */
+}
+
+form {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 20px;
+}
+
+/* Estilos para la parte 1 del formulario */
+.parte1 {
+  align-items: center;
+  background-color: #B2CABE; /* Color de fondo */
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.contenedor-izquierdo {
+  flex: 1;
+}
+
+.textoA {
+  color: #000;
+  font-family: ABeeZee;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.texto1 {
+  color: #000;
+  font-family: "GFS Didot";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.consulta {
+  display: flex;
+  align-items: center;
+  background-color: #F0F0F0; /* Color de fondo */
+  padding: 10px 20px; /* Espacio interno */
+  border-radius: 10px; /* Borde redondeado */
+}
+
+.botonEligir {
+  margin-right: 10px; /* Espacio entre el botón de radio y el texto */
+}
+
+/* Estilos para la parte 3 del formulario */
+.parte3{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #F0F0F0; /* Color de fondo */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.parte4 {
+  display: flex;
+  background-color: #F0F0F0; /* Color de fondo */
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: row;
+  gap: 16px;
+}
+
+
+
+/* Estilos para el contenedor de cada formulario */
+.formulario1 {
+  width: 48%; /* Ajusta el ancho según tus necesidades */
+}
+
+/* Estilos para los campos de entrada */
+.box {
+  margin-bottom: 15px;
+}
+
+.texto3 {
+color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+textarea  {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin-right: 20px;
+
+}
+
+
+/* Estilos para el botón de enviar o enviar formulario */
+input[type='submit'] {
+  padding: 10px 20px; /* Espaciado interno del botón */
+  background-color: #4CAF50; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  border: none; /* Quita el borde */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+input[type='submit']:hover {
+  background-color: #45a049; /* Cambia el color de fondo al pasar sobre el botón */
+}
+
+/* Estilos generales para todas las partes */
+
+
+/* Estilos para el título */
+.titulo {
+  font-size: 24px; /* Tamaño de fuente del título */
+  font-weight: bold; /* Texto en negrita */
+  margin-bottom: 10px; /* Margen inferior */
+  display: block; /* Hace que el título se muestre en una línea separada */
+}
+
+
+/* Estilos para los inputs */
+.rellenarTarjeta {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el checkbox */
+.aceptarTodo {
+  margin-right: 10px; /* Espacio a la derecha del checkbox */
+}
+
+/* Estilos para el mensaje de error */
+#mensaje-error {
+  color: red; /* Color del texto */
+  margin-top: 10px; /* Margen superior */
+}
+
+/* Estilos para el botón */
+/* Estilos para la parte 8 */
+.parte8 {
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para el botón dentro de la parte 8 */
+#compraCita {
+  width: 80%;
+  padding: 10px; /* Espacio interno */
+  border-radius: 32px;
+background: var(--rosa-contraste, #EFACAC);
+/* shadow */
+box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  color: black; /* Color del texto del botón */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Domine;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+}
+
+
+/* Estilos para el botón al pasar el cursor */
+#compraCita:hover {
+  border-radius: 32px;
+  background: var(--contraste-clarito, #CD6161);
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+#compraCita:active {
+  border-radius: 32px;
+  background: var(--clicked-contraste, #E2B2B2);
+}
+
+/* Estilos generales para el formulario */
+.forma {
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  width: 60%; /* Ancho del formulario */
+
+}
+
+.textoB{
+  color: #000;
+  font-family: "GFS Didot";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Estilos para el contenedor principal */
+.comprar {
+  background-color: #f9f9f9; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 8px; /* Borde redondeado */
+  padding: 20px; /* Espacio interno */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para la parte 1 */
+.parteCompra1 {
+  border-bottom: 2px solid #ccc; /* Borde inferior */
+  padding-bottom: 10px; /* Espacio interno inferior */
+}
+
+/* Estilos para el título */
+.titulo {
+  font-size: 24px; /* Tamaño de fuente */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para la parte del resumen */
+.resumen, .cupon, .total {
+  margin-top: 15px; /* Margen superior */
+  display: flex; /* Utiliza flexbox para alinear elementos */
+  justify-content: space-between; /* Distribuye los elementos de forma uniforme */
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+/* Estilos para los campos de texto y botón */
+.cuponBac {
+  padding: 10px; /* Espacio interno */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.botonAñadir {
+  padding: 10px 20px; /* Espacio interno */
+  background: var(--rosa-contraste, #EFACAC);
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);  
+  color: black; /* Color del texto */
+  border: none; /* Sin borde */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.botonAñadir:hover {
+  border-radius: 32px;
+  background: var(--contraste-clarito, #CD6161);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.botonAñadir:active {
+  border-radius: 32px;
+  background: var(--clicked-contraste, #E2B2B2);
+}
+
+@media screen and (max-width: 768px) {
+  .formulario {
+    width: 100%; /* Ajusta el ancho del formulario al 100% */
+  }
+
+    .contenido {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap; /* Añadido para permitir el flujo del contenido en dispositivos pequeños */
+      margin-right: 10px;
+
+    }
+    
+}

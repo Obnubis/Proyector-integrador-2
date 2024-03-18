@@ -1,245 +1,147 @@
-
-*{
+body {
+  font-family: 'ABeeZee', sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
 }
 
+.micuenta-button {
+  padding: 16px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  transition: background-color 0.3s ease;
+  width: 255px;
+  height: 52px;
+  margin: 20px;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-  }
+.micuenta-button:hover {
+  background: #CD6161;
+}
 
-  hr {
-    background-color: black;
-    height: 2px;
+.micuenta-button:active {
+  background: #E2B2B2;
+}
 
-  }
+.micuenta-button:disabled {
+  background: rgba(125, 106, 106, 0.50);
+  cursor: not-allowed;
+}
 
-  .main-container {
-    overflow: hidden;
-  }
-  
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
-  .main-container {
-    display: flex;
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hr {
+  background-color: black;
+  height: 2px;
+  margin: 20px 0; /* Agrega un espacio entre elementos */
+}
+
+.main-container {
+  position: relative;
+  overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.contenido {
+  position: relative;
+  z-index: 1;
+  max-width: calc(100% - 64px);
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 20px;
+}
+
+.mi-perfil,
+.seguro-cerrar-sesion {
+color: #000;
+font-family: ABeeZee;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal; 
+}
+
+.cosas {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
-  width: auto;
+  gap: 20px;
+  max-width: 863px;
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  margin-top: 32px;
+}
+
+.primary-buttons-11,
+.primary-buttons-13 {
+  padding: 16px 32px;
+  cursor: pointer;
+  background: #EFACAC;
+  border: none;
+  font-size: 16px;
+  border-radius: 32px;
+  box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
+  transition: background-color 0.3s ease;
+}
+
+.image-removebg-preview {
+  flex-shrink: 0;
   position: relative;
- 
-  margin: 0 auto;
-  background: #ffffff;
-  overflow: hidden;
-  }
+  width: 257px;
+  height: 375px;
+  background: url(../img/adios.png) no-repeat center;
+  background-size: cover;
+  z-index: 26;
+}
+
+.image-27 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: url(../img/fondo1.png) no-repeat center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
   .contenido {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 1303px;
-    z-index: 2;
-  }
-  .mi-perfil {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 273px;
-    height: 53px;
-    color: #000000;
-    font-family: ABeeZee;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 53px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 3;
-    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  .contenido-7 {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 1303px;
-    height: 530px;
-    z-index: 4;
-  }
-  .line {
-    flex-shrink: 0;
-    position: relative;
-    width: 1303.006px;
-    height: 1px;
-    background-size: cover;
-    z-index: 5;
-  }
-  .frame-8 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 1212px;
-    height: 441px;
-    z-index: 6;
-  }
-  .frame-9 {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 273px;
-    z-index: 7;
-  }
-  
-  .cosas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 32px;
-    position: relative;
-    width: 863px;
-    padding: 16px 0 16px 0;
-    z-index: 19;
-  }
-  .seguro-cerrar-sesion {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 863px;
-    height: 51px;
-    color: #000000;
-    font-family: ABeeZee;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 51px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 20;
-  }
-  .frame-10 {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 128px;
-    position: relative;
-    width: 362px;
-    z-index: 21;
-  }
-  .primary-buttons-11 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 117px;
-    height: 24px;
-    padding: 16px 16px 16px 16px;
-    cursor: pointer;
-    background: #efabab;
-    border: none;
-    z-index: 22;
-    border-radius: 32px;
-    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
-  }
-  .button-12 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 75px;
-    height: 17px;
-    color: #000000;
-    font-family: Domine;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 23;
-  }
-  .primary-buttons-13 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 117px;
-    height: 24px;
-    padding: 16px 16px 16px 16px;
-    cursor: pointer;
-    background: #efabab;
-    border: none;
-    z-index: 24;
-    border-radius: 32px;
-    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
-  }
-  .button-14 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 75px;
-    height: 17px;
-    color: #000000;
-    font-family: Domine;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 25;
+      padding: 10px;
   }
   .image-removebg-preview {
-    flex-shrink: 0;
-    position: relative;
-    width: 257px;
-    height: 375px;
-    background: url(../img/adios.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 26;
+      display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .image-removebg-preview {
+      width: 50%;
+      height: auto;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
   }
   .image-27 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 112px;
-    background: url(../img/fondo1.png) no-repeat center;
-    background-size: cover;
-  } 
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+}

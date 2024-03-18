@@ -4,82 +4,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Mente Atenta</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Domine:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dosis:wght@400&display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=GFS+Didot:wght@400&display=swap"/>
     <link rel="stylesheet" href="CSS/index.css"/>
+    <link rel="icon" type="image" href="img/logo.png">
+
   </head>
   <body>
      <form action="/ruta-del-servidor" method="post">
       <?php
       include "header.php";
       ?>
-    
-    
+       <?php include 'Base_Datos/crea_tabla.php';?>
+
+
       <div class="hero">
-        <h1>
+        <span class="texto">
           Tu singularidad es tu superpoder <br />No hay límites para lo que puedes
           <br />lograr con tu talento único.
-        </h1>
+        </span>
+        
         <button class="start_button">
-          <a href="inicioSesion.php">Empezar</a>
+          <a href="iniciaSesion.php">Empezar</a>
         </button>
       </div>
   
       <div class="products">
-        <h1>¿Necesitas ayuda? Te ayudamos</h1>
+        <span class="texto2">¿Necesitas ayuda? Te ayudamos</span>
         <div class="card_container">
           <div class="card">
-            <img src="#" alt="" />
-            <h1>Contestar a los test</h1>
-            <h3>
+            <img src="img/Rectangle 10.png" alt="" />
+            <span class="texto3">Contestar a los test</span>
+            <span class="texto4">
               Responde a tu ritmo y sin prisas es necesario, para determinar si
               tienes o no TDA o TDH una vez hecho, te animamos a ir a los consejos
-            </h3>
+            </span>
           </div>
           <div class="card">
-            <img src="#" alt="" />
-            <h1>Busca tu psicologo</h1>
-            <h3>
+            <img src="img/Rectangle 10 (1).png" alt="" />
+            <span class="texto3">Busca tu psicologo</span>
+            <span class="texto4">
               Aquí podrás encontrar a tu psicologo, todos son profesionales del
               sector y te ayudarán. Recuerda que estan para ayudarte, animate
-            </h3>
+            </span>
           </div>
           <div class="card">
-            <img src="#" alt="" />
-            <h1>Cita con tu psicologo</h1>
-            <h3>
+            <img src="img/Rectangle 10 (2).png" alt="" />
+            <span class="texto3">Cita con tu psicologo</span>
+            <span class="texto4">
               Desbloquea tu bienestar emocional, reserva tu cita hoy y comienza el
               viaje hacia una mente más fuerte y equilibrada.
-            </h3>
+            </span>
           </div>
           <div class="card">
-            <img src="#" alt="" />
-            <h1>Seguimiento con tu psicologo</h1>
-            <h3>
+            <img src="img/Rectangle 10 (3).png" alt="" />
+            <span class="texto3">Seguimiento con tu psicologo</span>
+            <span class="texto4">
               Descubre la transformación personal con nuestro seguimiento
               psicológico. Da el primer paso hacia un bienestar duradero hoy
               mismo.
-            </h3>
+            </span>
           </div>
         </div>
         <div class="button_container">
           <button class="start_now">
-            <a href="#">Empezar ahora</a>
+            <a href=citaSinSesion.php class="texto5">Empezar ahora</a>
           </button>
         </div>
       </div>
   
       <div class="asesor">
         <div class="text-container">
-        <h1>¿Tienes el TDAH?<br> Descúbrerlo !!!</h1>
-        <h3>Test para identificar el TDAH Gratuita</h3>
-        <h4>Responde las preguntas para recibir un plan personalizado <br> y 
+        <span class="texto8">¿Tienes el TDAH? <br> Descúbrerlo !!!</span>
+        <span class="texto6">Test para identificar el TDAH Gratuita</span>
+        <span class="texto7">Responde las preguntas para recibir un plan personalizado <br> y 
           enfrenta tus objetivos con mucha concentracion, energia y 
-          voluntad!</h4>
-          <button class="comienza"><a href="test.php">comienza</a></button>
+          voluntad!</span>
+          <button class="start_now"><a href="test.php" class="texto5">Comienza</a></button>
         </div>
           
           <div class="image-container">
@@ -89,53 +93,50 @@
   
       <div class="servicios">
         <div class="plans">
-          <h1>¿Quieres cambiar?<br> 
-            ¡Transformate!  </h1>
-          <h2>Elige desde 0 €</h2>
+          <span class="texto9">¿Quieres cambiar?<br> 
+            ¡Transformate!  </span>
+          <span class="texto10">Elige desde 0 €</span>
           <img src="img/imagenMujer.png" class="image">
-          <button class="plan">Ver planes</button>
+          <button class="plan"><a href="suscripciones(precio).php">Ver planes</a></button>
         </div>
         <div class="column">
         <div class="anounce">
-          <h3>Di adiós al estrés, la culpa o la sensación de que estás 
-            constantemente atrás. Descubre cómo el TDAH te ha 
-            impedido alcanzar tus sueños </h3>
-          <button class="planes">Ver planes</button>
+          <span class="texto11">Di adiós al estrés, la culpa o la sensación de que estás <br>
+            constantemente atrás. Descubre cómo el TDAH te ha <br>
+            impedido alcanzar tus sueños </span>
+            <button class="plan"><a href="suscripciones(precio).php">Ver planes</a></button>
         </div>
         <div class="health">
-          <h2>Tu salud, más fácil</h2>
-          <h3>Compra consultas, pruebas y cursos en más de 200 clínicas privadas a los mejores precios.  Sin listas de espera. Sin cuotas</h3>
-          <button class="planes">Ver planes</button>
-          <button class="planes"><a href="contacto.html">¿Te llamamos?</a></button>
+          <span class="texto6">Tu salud, más fácil</span>
+          <span class="texto11">Compra consultas, pruebas y cursos en más de 200 <br>clínicas 
+           privadas a los mejores precios. Sin listas  de<br> espera. Sin cuotas</span>
+           <button class="plan"><a href="suscripciones(precio).php">Ver planes</a></button>
+          <button class="planese"><a href="contacto.php">¿Te llamamos?</a></button>
         </div>
       </div>
       </div>
       <div class="valoracion">
-        <h1>¿Cómo nos valoran nuestros usuarios?</h1>
+        <span class="texto2">¿Cómo nos valoran nuestros usuarios?</span>
         <div class="cartas">
           <div class="cards">
-            <div class="profile"><img src="img/Rectangle 17.png" alt=""></div>
-            <h2>Macarena García</h2>
-            <h3>Han sido genial, me ha 
+            <span class="texto6">Macarena García</span>
+            <span class="texto4">" Han sido genial, me ha 
               ayudado mucho a 
-              comprenderme a mí misma</h3>
+              comprenderme a mí misma "</span>
           </div>
           <div class="cards">
-            <div class="profile2"><img src="img/Rectangle 85.png" alt=""></div>
-            <h2>Victor Fuertes</h2>
-            <h3>El taller de gestión de estrés con TDA me dio herramientas clave para encontrar equilibrio en mi vida</h3>
+            <span class="texto6">Victor Fuertes</span>
+            <span class="texto4">" El taller de gestión de estrés con TDA me dio herramientas clave para encontrar equilibrio en mi vida "</span>
           </div>
           <div class="cards">
-            <div class="profile3"><img src="img/Rectangle 91.png" alt=""></div>
-            <h2>Juan del Hoyo</h2>
-            <h3>Gracias a los psicologos se como lidiar mejor con mis emociones y me han ayudado a centrarme</h3>
+            <span class="texto6">Juan del Hoyo</span>
+            <span class="texto4">" Gracias a los psicologos se como lidiar mejor con mis emociones y me han ayudado a centrarme "</span>
           </div>
           <div class="cards">
-            <div class="profile4"><img src="img/Rectangle 88.png" alt=""></div>
-            <h2>Lucia Vargas</h2>
-            <h3>Gracias a los talleres se 
+            <span class="texto6">Lucia Vargas</span>
+            <span class="texto4">" Gracias a los talleres se 
               como lidiar con mi hijo 
-              que tiene TDA</h3>
+              que tiene TDA "</span>
           </div>
         </div>
       </div>

@@ -1,0 +1,4 @@
+Páginas CSS realizadas por cada uno:
+Mario, cuenta(perfil)
+Angi, css de las páginas junto con Amelia
+Amelia, responsive de todas las páginas

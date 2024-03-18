@@ -1,174 +1,64 @@
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  .menu {
-    display: flex;
+.menu {
+  background: var(--verde-secundario-pastel, #AABBB2);
+  /* height: 100%; /* Ocupa toda la altura de la página  */
+  border-radius: 20px;
+}
+
+.menu-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%; /* Ocupa toda la altura de la página */
+}
+
+.menu-item {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-item a {
+  display: block;
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: var(--verde-secundario-pastel, #AABBB2);
+  /* shadow */
+  transition: background-color 0.3s;
+  color: #0F0559;
+text-align: center;
+font-family: "GFS Didot";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; /* 25.2px */
+}
+
+.menu-item a:hover {
+  background: var(--verde-pastel, #D4E8DE);
+  /* shadow */
+    border-radius: 20px;
+}
+.menu-item a:active {
+  background: var(--clicked, #BCDFCE);
+      border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .menu-list {
     flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 273px;
-    z-index: 8;
   }
-  .secondary-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 273px;
-    height: 43px;
-    padding: 16px 16px 16px 16px;
-    z-index: 9;
-    border: 1px solid #000000;
-  }
-  .button-informacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 99px;
-    height: 25px;
-    color: #0f0559;
-    font-family: GFS Didot, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
+
+  .menu-item {
     text-align: center;
-    white-space: nowrap;
-    z-index: 10;
+    border-top: 1px solid #777;
   }
-  .secondary-buttons-a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 273px;
-    height: 43px;
-    padding: 16px 16px 16px 16px;
-    z-index: 11;
-    border: 1px solid #000000;
-  }
-  .button-mis-citas {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 71px;
-    height: 25px;
-    color: #0f0559;
-    font-family: GFS Didot, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 12;
-  }
-  .secondary-buttons-b {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 273px;
-    height: 45px;
-    padding: 16px 16px 16px 16px;
-    z-index: 13;
-    border: 1px solid #000000;
-  }
-  .button-mis-suscripciones {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 141px;
-    height: 25px;
-    color: #0f0559;
-    font-family: GFS Didot, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 14;
-  }
-  .secondary-buttons-c {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 273px;
-    height: 43px;
-    padding: 16px 16px 16px 16px;
-    z-index: 15;
-    border: 1px solid #000000;
-  }
-  .button-d {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 134px;
-    height: 25px;
-    color: #0f0559;
-    font-family: GFS Didot, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 16;
-  }
-  .secondary-buttons-e {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 273px;
-    height: 43px;
-    padding: 16px 16px 16px 16px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    z-index: 17;
-    border: 1px solid #000000;
-  }
-  .button-f {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 108px;
-    height: 25px;
-    color: #0f0559;
-    font-family: GFS Didot, var(--default-font-family);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    text-align: center;
-    white-space: nowrap;
-    z-index: 18;
-  }
+}

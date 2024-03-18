@@ -1,0 +1,535 @@
+.contenido {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 20px; */
+}
+
+.contenido1 {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.parte1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 32px;
+  background-image: url('../img/fondoPrecio.png'); /* Ajusta la ruta de la imagen de fondo */
+  background-size: cover;
+  color: black; /* Color de texto predeterminado */
+}
+
+.parte1 .titulo1 {
+color: #000;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Dosis;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.parte1 .titulo2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: ABeeZee;
+font-size: 35px;
+}
+
+.parte1 .group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parte1 .precio {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.parte1 .botonUnete {
+  background-color: #efacac;
+  color: #000; /* Color del texto del botón */
+  padding: 10px 88px;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: ABeeZee;
+  color: #000;
+  font-family: ABeeZee;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 67.2px */
+
+}
+
+.parte1 .botonUnete:hover {
+  background: var(--contraste-clarito, #CD6161);
+/* shadow */
+box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.parte1 .botonUnete:active {
+  background: var(--clicked-contraste, #E2B2B2);
+}
+.parte1 .botonUnete a {
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0px;
+  
+}
+
+.parte2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f2f2f2; /* Color de fondo */
+}
+
+.medio {
+  max-width: 800px; /* Ancho máximo del contenedor */
+}
+
+.medio .text1 {
+  display: block; /* Para que ocupe todo el ancho disponible */
+  text-align: center; /* Para centrar el texto dentro del bloque */
+  font-family: ABeeZee;
+  font-size: 48px;    
+  margin-bottom: 20px; /* Puedes ajustar el espacio entre este elemento y los demás elementos */
+}
+
+.text1 {
+  display: block; /* Para que ocupe todo el ancho disponible */
+  /* Para centrar el texto dentro del bloque */
+  font-family: ABeeZee;
+  font-size: 48px;    
+  margin-bottom: 20px; /* Puedes ajustar el espacio entre este elemento y los demás elementos */
+
+}
+
+.tarjetas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff; /* Color de fondo de la sección */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  margin: 32px 0px 32px 0px;
+
+}
+
+.tarjetas .imagen {
+  max-width: 200px; /* Ancho máximo de la imagen */
+  margin-right: 20px;
+}
+
+.estandar {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.frame21, .frame22, .frame23 {
+  margin-bottom: 20px;
+}
+
+.frame21 .texto1 {
+  font-size: 24px;
+  color: #000;
+text-align: center;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Domine;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.frame21 hr {
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Color y grosor de la línea */
+}
+
+
+
+.frame23 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.frame23 .texto3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.frame23 .texto4 {
+  font-size: 18px;
+}
+
+
+.apuntame {
+  background-color: #efacac;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.apuntame:hover {
+  background: var(--contraste-clarito, #CD6161);
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.apuntame:active {
+  background: var(--clicked-contraste, #E2B2B2);
+}
+.texto1 {
+  font-family: Dosis;
+  font-size: 40px;}
+
+.texto1 ol {
+  margin-top: 10px; /* Espacio arriba de la lista */
+  margin-bottom: 10px; /* Espacio abajo de la lista */
+  padding-left: 20px; /* Sangría a la izquierda de la lista */
+}
+
+.texto1 ol li {
+  font-size: 14px; /* Tamaño del texto de los elementos de la lista */
+  line-height: 1.5; /* Altura de línea para un mejor espaciado */
+  margin-bottom: 5px; /* Espacio entre elementos de la lista */
+}
+
+
+
+/* Estilos para la parte 3 */
+.parte3 {
+  width: 100%;
+  padding: 20px;
+  background-image: url('../img/fondo42.avif'); /* Establecer la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen de fondo para cubrir completamente el contenedor */
+  background-repeat: no-repeat; /* Evitar que la imagen de fondo se repita */
+  background-position: center; /* Centrar la imagen de fondo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar una sombra suave */
+}
+
+
+.contenido3 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.texto1 {
+  font-size: 28px; /* Incrementamos el tamaño del texto */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; /* Incrementamos el espacio inferior */
+}
+
+.ventaja {
+  display: flex;
+  justify-content: space-between; /* Distribuir los elementos de manera uniforme */
+}
+
+.columna1,
+.columna2 {
+  flex: 1;
+  padding: 0 10px; /* Añadimos espacio interno a las columnas */
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Incrementamos el espacio inferior */
+}
+
+.texto3 {
+  font-family: Poppins;
+  font-size: 16px;    font-weight: bold;
+  color: #050505; /* Cambiamos el color del número de la lista */
+  margin-right: 15px; /* Incrementamos el espacio a la derecha */
+}
+
+.frame8 {
+  border: 2px solid black; /* Cambiamos el color del borde */
+  border-radius: 8px; /* Reducimos el radio del borde */
+  padding: 15px; /* Incrementamos el espacio interno */
+}
+
+.texto2 {
+  font-family: Domine;
+  font-size: 30px;    color: #555; /* Cambiamos el color del texto */
+}
+
+.botonUnete {
+  background: var(--rosa-contraste, #EFACAC);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);    
+  border: none;
+  border-radius: 32px; /* Hacemos el botón más redondeado */
+  padding: 8px 88px; /* Incrementamos el relleno */
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease; /* Agregamos una transición suave */
+}
+.botonUnete:hover {
+  background: var(--contraste-clarito, #CD6161);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.botonUnete:active {
+  background: var(--clicked-contraste, #E2B2B2);
+}
+.botonUnete a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-bottom: 0px;
+
+}
+
+
+
+/* Estilos para la parte 4 */
+.parte4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.parte4 .textoAB {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.texto1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.texto2 {
+  font-size: 20px;
+  color: #555;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.texto3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  
+  line-height: 1.6; /* Altura de línea para un mejor espaciado */
+}
+
+.imagen img {
+  width: 400px; /* Ancho de la imagen */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 5px;
+}
+
+
+/* Estilos para la parte 5 */
+.parte5 {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.contenido {
+  
+  margin: 0 auto;
+}
+
+.texto1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 20px;
+  font-family: ABeeZee; 
+  margin-bottom: 20px; 
+}
+
+.tarjeta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarjeta1 {
+  flex: 1;
+  margin-right: 20px; /* Espacio entre las tarjetas */
+}
+
+.salud {
+  text-align: center;
+}
+
+.imagen img {
+
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.texto2 {
+  color: #000;
+font-family: Domine;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.duda {
+  background: var(--rosa-contraste, #EFACAC);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  border: none;
+  border-radius: 32px;
+  padding: 10px 88px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.duda:hover {
+  background: var(--contraste-clarito, #CD6161);
+  
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+
+.duda:active {
+  background: var(--clicked-contraste, #E2B2B2);
+}
+/* Estilos para pantallas de hasta 768px de ancho */
+@media (max-width: 768px) {
+  .parte1 {
+      padding: 30px;
+      gap: 16px;
+  }
+  
+  .parte2 {
+      padding: 30px;
+  }
+  
+  .parte3 {
+      padding: 30px;
+  }
+  
+  .parte4 {
+      padding: 30px;
+  }
+  
+  .parte5 {
+      padding: 30px;
+  }
+  
+  .texto1 {
+      font-size: 20px;
+  }
+  
+  .tarjeta1 {
+      margin-right: 0; /* Eliminamos el espacio entre las tarjetas */
+      margin-bottom: 20px; /* Añadimos espacio entre las tarjetas */
+
+  }
+  
+  .text1 {
+      font-size: 32px;
+  }
+  .imagen img {
+      width: 100px; /* Reducimos el tamaño de las imágenes */
+      height: 100px;
+  }
+  .tarjeta {
+      flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+  }
+  
+  .tarjeta1 {
+      flex-basis: auto; /* Permitimos que las tarjetas ocupen el ancho completo */
+      margin-right: 0; /* Eliminamos el margen derecho */
+      margin-bottom: 20px; /* Agregamos espacio entre las tarjetas */
+  }
+}
+
+/* Estilos para pantallas de hasta 576px de ancho */
+@media (max-width: 576px) {
+  .parte1 {
+      padding: 20px;
+      
+  }
+  .parte1 .titulo1 {      
+      font-size: 32px;
+      }
+  .parte1 .titulo2 {      
+  font-size: 20px;
+  }
+  .parte1 .botonUnete {
+  
+  font-size: 20px;
+
+  }
+  .parte2 {
+      padding: 20px;
+  }
+  
+  .parte3 {
+      padding: 20px;
+  }
+  
+  .parte4 {
+      padding: 20px;
+  }
+  
+  .parte5 {
+      padding: 20px;
+  }
+  
+  .medio .text1 {
+      font-size: 32px; /* Reducimos el tamaño del texto */
+  }
+  
+  .imagen img {
+display: none
+  }
+  .tarjeta {
+      flex-direction: column; /* Cambiamos la dirección del flexbox a columna */
+  }
+  
+  .tarjeta1 {
+      flex-basis: auto; /* Permitimos que las tarjetas ocupen el ancho completo */
+      margin-right: 0; /* Eliminamos el margen derecho */
+      margin-bottom: 20px; /* Agregamos espacio entre las tarjetas */
+  }
+}

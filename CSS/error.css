@@ -1,39 +1,95 @@
-
-.volver{
+/* Estilos base */
+.volver {
     background-color: #efacac;
-    margin-left: 600px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
     border-radius: 32px;
-    width: 298px;
+    width: 255px;
+    height: 52px;
+    font-size: 16px;
+    border: none !important;
+    display: block;
+    /* Hacer el botón un bloque para centrarlo */
 }
 
-.derecha{
-    margin-left: 50px;
+.volver:hover {
+    border-radius: 32px;
+    background: var(--contraste-clarito, #CD6161);
+
+    /* shadow */
+    box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
 }
 
-.columna{
+.volver:active {
+    border-radius: 32px;
+    background: var(--clicked-contraste, #E2B2B2);
+}
+
+.derecha {
     margin-left: 30px;
+    margin-right: 30px;
+    max-width: 100%;
+    /* La imagen no puede ser más ancha que su contenedor */
+}
+
+.columna {
     color: #000;
+    font-family: Dosis;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 50px;
 
-font-family: Dosis;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
 }
 
-.columna h1{
-    width: 660px;
+.columna h1 {
+    width: 100%;
+    /* Hacer que los encabezados ocupen todo el ancho disponible */
 }
 
-.volver a{
-text-decoration: none;
-color: #000000;
+.volver a {
+    text-decoration: none;
+    color: #000000;
 }
 
-.caja{
+.caja {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /* Cambiar la dirección a columna en pantallas pequeñas */
 }
 
+.imagen2 {
+    border-radius: 50%;
+}
 
+/* Consultas de medios para hacer responsive el diseño */
+@media only screen and (min-width: 600px) {
+    .caja {
+        flex-direction: row;
+        /* Cambiar a fila en pantallas más grandes */
+    }
+
+    .derecha img {
+        max-width: 100%;
+        /* La imagen no puede ser más ancha que su contenedor en pantallas pequeñas */
+        height: auto;
+        /* Hacer que la altura de la imagen se ajuste automáticamente */
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .columna {
+        margin-left: 10px;
+        /* Reducir el margen en pantallas pequeñas */
+    }
+
+    .derecha img {
+        max-width: 100%;
+        /* La imagen no puede ser más ancha que su contenedor en pantallas pequeñas */
+        height: auto;
+        /* Hacer que la altura de la imagen se ajuste automáticamente */
+    }
+
+}

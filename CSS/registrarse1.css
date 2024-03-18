@@ -1,660 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('../img/fondoinicia.jpg');
+  background-size: cover;
+}
 
-  a {
-    text-decoration: none;
-    color: #000000;
-  }
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../img/fondoinicia.jpg');
+  background-size: cover;
+  padding: 10px;
+}
+
+.contenido {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; /* Ajuste del modelo de caja */
+  /* height: 650px; */
+}
+
+.crea-tu-cuenta {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.parte,
+.parte-2,
+.parte-3 {
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos pequeños */
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+/* Ajustes para los inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: -1px;
+  box-sizing: border-box;
+}
+
+.registro,
+.google-button,
+.facebook-button {
+  background: var(--rosa-contraste, #EFACAC);
   
-  .main-container {
-    overflow: hidden;
-  }
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+  border: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.registro:hover,
+.google-button:hover,
+.facebook-button:hover{
+  background: var(--contraste-clarito, #CD6161);
   
-  .main-container,
-  .main-container * {
-    box-sizing: border-box;
-  }
-  
-  input,
-  select,
-  textarea,
-  button {
-    outline: 0;
-  }
-  
-  .main-container {
-    position: relative;
-    width: 1131px;
-    height: 696px;
-    margin: 0 auto;
-    background: #d7ddda;
-    overflow: hidden;
-  }
-  .cierre {
-    position: relative;
-    width: 30px;
-    height: 30px;
-    margin: 2px 0 0 1089px;
-    background: url(../imagen/inicioSesionRegistrarse/cruzo.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 46;
-    overflow: hidden;
-    border: none;
-  }
-  .cierre:hover{
-    border: 1px solid black;
-  }
+  /* shadow */
+  box-shadow: 2px 2px 4px 0px rgba(51, 62, 99, 0.75);
+}
+.registro:active,
+.google-button:active,
+.facebook-button:active{
+  background: var(--clicked-contraste, #E2B2B2);
+}
+.o-registrase-con {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.google-facebook {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.google-button,
+.facebook-button {
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 52px;
+}
+.volver-button {
+  position: fixed;
+  top: 20px; /* Ajusta según tu preferencia */
+  right: 20px; /* Ajusta según tu preferencia */
+  background-color: #aabbb2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+.campo-invalido {
+  border: 1px solid red; /* Esto resalta el borde en rojo */
+}
+
+.mensaje-error {
+  color: red;
+}
+
+@media (max-width: 600px) {
   .contenido {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    gap: 128px;
-    position: relative;
-    width: 1026px;
-    margin: 0 0 0 52.5px;
-    z-index: 2;
+    width: 80%;
+    padding: 20px;
+
   }
-  .izquierda {
-    flex-shrink: 0;
-    position: relative;
-    width: 417px;
-    height: 471px;
-    background: url(/img/izquierda.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 3;
+
+  /* Ajustes para los inputs en dispositivos pequeños */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    margin-bottom: 20px;
   }
-  .derecha {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 8px;
-    position: relative;
-    width: 480px;
-    padding: 32px 32px 32px 32px;
-    background: #aabbb2;
-    z-index: 4;
-    border-radius: 24px;
+  .volver-button {
+    display: none; /* Hace que el botón desaparezca en dispositivos móviles */
   }
-  .crea-tu-cuenta {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 57px;
-    color: #000000;
-    font-family: ABeeZee;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 56.736px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 5;
+}
+@media (MAX-width: 768px) {
+  /* Muestra el botón solo en pantallas más grandes que tablet */
+  .volver-button {
+    display: none;
   }
-  .parte {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 32px;
-    position: relative;
-    width: 411px;
-    z-index: 6;
-  }
-  .usuario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 189px;
-    z-index: 7;
-  }
-  .nombre {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 189px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 8;
-  }
-  .rectangle {
-    flex-shrink: 0;
-    position: relative;
-    width: 189px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 9;
-    overflow: hidden;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-  }
-  .apellido {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    z-index: 10;
-  }
-  .span-apellido {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 172px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 11;
-  }
-  .rectangle-2 {
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 12;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .parte-2 {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 32px;
-    position: relative;
-    width: 412px;
-    z-index: 13;
-  }
-  .dni {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    z-index: 14;
-  }
-  .text-4 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 171px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 15;
-  }
-  .rectangle-4 {
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 16;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .fecha {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    z-index: 17;
-  }
-  .fecha-de-nacimiento {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 190px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 18;
-  }
-  .rectangle-6 {
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 19;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .parte-3 {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 32px;
-    position: relative;
-    width: 416px;
-    z-index: 20;
-  }
-  .provincia {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    z-index: 21;
-  }
-  .span-provincia {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 170px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 22;
-  }
-  .rectangle-9 {
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    height: 30px;
-    background: #e7e1e1;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    border: 1px solid #000000;
-    z-index: 23;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .codigo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    z-index: 24;
-  }
-  .span-codigo-postal {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 190px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 25;
-  }
-  .rectangle-b {
-    flex-shrink: 0;
-    position: relative;
-    width: 190px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    z-index: 26;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .domicilio {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 416px;
-    height: 56px;
-    z-index: 27;
-  }
-  .span-domicilio {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 172px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 28;
-  }
-  .rectangle-d {
-    flex-shrink: 0;
-    position: relative;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    width: 416px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 29;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .email {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 416px;
-    height: 53px;
-    z-index: 30;
-  }
-  .e-mail {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 172px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 31;
-  }
-  .rectangle-f {
-    flex-shrink: 0;
-    position: relative;
-    width: 416px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    z-index: 32;
-    overflow: hidden;
-    border-radius: 10px;
-  }
-  .contrasena {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    position: relative;
-    width: 416px;
-    z-index: 33;
-  }
-  .text-a {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 172px;
-    height: 25px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24.98px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 34;
-  }
-  .rectangle-11 {
-    flex-shrink: 0;
-    position: relative;
-    width: 416px;
-    height: 30px;
-    background: #e7e1e1;
-    border: 1px solid #000000;
-    z-index: 35;
-    overflow: hidden;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    border-radius: 10px;
-  }
-  .regiistro {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 16px;
-    position: relative;
-    width: 360px;
-    height: 40px;
-    padding: 16px 16px 16px 16px;
-    cursor: pointer;
-    background: #efabab;
-    border: none;
-    z-index: 36;
-    border-radius: 32px;
-    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
-  }
-  .button {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 34px;
-    color: #000000;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 33.6px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 37;
-  }
-  .o-registrase-con {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    width: 156px;
-    height: 21px;
-    color: #000000;
-    font-family: GFS Didot;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 38;
-  }
-  .google-facebook {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 86px;
-    position: relative;
-    width: 389px;
-    height: 44px;
-    z-index: 39;
-  }
-  .google-button {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 10px;
-    position: relative;
-    width: 150px;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid #000000;
-    z-index: 40;
-    border-radius: 32px;
-    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
-  }
-  .duck-icon-google {
-    flex-shrink: 0;
-    position: relative;
-    width: 23.142px;
-    height: 23.142px;
-    background: url(/icons/icon\ _google_.png)
-      no-repeat center;
-    background-size: 100% 100%;
-    z-index: 41;
-  }
-  .google {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 22px;
-    color: #0f0558;
-    font-family: GFS Didot;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 42;
-  }
-  .facebook-button {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-shrink: 0;
-    gap: 10px;
-    position: relative;
-    width: 150px;
-    padding: 10px 10px 10px 10px;
-    cursor: pointer;
-    background: transparent;
-    border: 1px solid #000000;
-    z-index: 43;
-    border-radius: 32px;
-    box-shadow: 2px 2px 4px 0 rgba(51, 62, 99, 0.75);
-  }
-  .bxl-facebook {
-    flex-shrink: 0;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    background: url(/icons/facebook.png)
-      no-repeat center;
-    background-size: cover;
-    z-index: 44;
-    overflow: hidden;
-  }
-  .facebook {
-    flex-shrink: 0;
-    flex-basis: auto;
-    position: relative;
-    height: 22px;
-    color: #0f0558;
-    font-family: GFS Didot;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    white-space: nowrap;
-    z-index: 45;
-  }
-  .fondo {
-    position: absolute;
-    width: 1146px;
-    height: 696px;
-    top: 0;
-    left: 0;
-    background: url(/img/fondo1.png)
-      no-repeat center;
-    background-size: cover;
-  }
-  
+}

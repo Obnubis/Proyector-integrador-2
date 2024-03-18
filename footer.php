@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/header-footer.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
@@ -14,22 +14,22 @@
         <div class="container">
             <div class="footer-row">
                 
-                    <div class="footer-section">
+            <div class="footer-section">
                         <h3>Para los usuarios</h3>
                         <ul>
-                            <li><a href="#"><span>Terapia - online</span></a></li>
-                            <li><a href="#"><span>Citas</span></a></li>
-                            <li><a href="#"><span>Suscripciones</span></a></li>
-                            <li><a href="#">Testimoniosos</a></li>
+                            <li><a href="terapia-online(talleres).php"><span>Terapia - online</span></a></li>
+                            <li><a href="citaSinSesion.php"><span>Citas</span></a></li>
+                            <li><a href="suscripciones(precio).php"><span>Suscripciones</span></a></li>
+                            <li><a href="testimonios.php">Testimonios</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
                         <h3>Servicio</h3>
                         <ul>
-                            <li><a href="#"><span>¿Quiénes somos?</span></a></li>
-                            <li><a href="#">FAQS</a></li>
-                            <li><a href="#">Contacto</a></li>
-                            <li><a href="#">Privacidad y cookies</a></li>
+                            <li><a href="sobreNosotros.php"><span>¿Quiénes somos?</span></a></li>
+                            <li><a href="FAQS.php">FAQS</a></li>
+                            <li><a href="contacto.php">Contacto</a></li>
+                            <li><a href="Legal.php">Privacidad y cookies</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
@@ -41,13 +41,16 @@
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
                             </div>
-                            <div class="payment-icons">
+                            <div class="footer-section">
                                 <h3>Formas de pago</h3>
-                                <i class="fab fa-cc-visa"></i>
-                                <i class="fab fa-cc-mastercard"></i>
-                                <i class="fab fa-cc-paypal"></i> 
-                                <i class="fab fa-cc-apple-pay"></i>
+                                <div class="payment-icons">
+                                    <i class="fab fa-cc-visa"></i>
+                                    <i class="fab fa-cc-mastercard"></i>
+                                    <i class="fab fa-cc-paypal"></i> 
+                                    <i class="fab fa-cc-apple-pay"></i>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
